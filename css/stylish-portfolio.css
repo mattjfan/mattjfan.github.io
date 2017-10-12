@@ -191,13 +191,16 @@ hr.small {
 
 
 /* Callout */
-
+.colorify{
+  color:#007bff
+}
 .callout {
     display: table;
     width: 100%;
     height: 400px;
-    color: #fff;
-    background: url(../img/callout.jpg) no-repeat center center scroll;
+    color: white;
+    background-color:#007bff;
+    /*background: url(../img/callout.jpg) no-repeat center center scroll;*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
