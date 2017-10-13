@@ -19,10 +19,11 @@
 
     <!-- Custom CSS -->
     <link href="css/stylish-portfolio.css" rel="stylesheet">
-
+    <script src = 'https://cdn.rawgit.com/mattboldt/typed.js/master/lib/typed.min.js'></script>
   </head>
 
   <body>
+
     <!-- Navigation -->
     <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
       <i class="fa fa-bars"></i>
@@ -48,7 +49,8 @@
     <aside id="homeBlock" class="callout">
       <div class="text-vertical-center">
         <h1 class='resume_link'><a class='resume_link' href="secret/mattFanResume.pdf" download style="text-decoration: none">Matthew Fan</a></h1>
-        <h4>Welcome to my portfolio!</h4>
+        <span id="typed"></span>
+        <h4><span id ='typeable' class='js-typed'></span></h4>
       </div>
     </aside>
 
@@ -146,5 +148,15 @@
     <script src="js/stylish-portfolio.js"></script>
 
   </body>
+
+  <script>
+  var typed = new Typed('#typeable', {
+    strings: ["UI/UX Designer.","Software Developer.", "Graphic Designer.","Roboticist.","Inventor."],
+    typeSpeed: 60,
+    backDelay:200,
+    backSpeed:60,
+    loop:true,
+  });
+  </script>
 
 </html>

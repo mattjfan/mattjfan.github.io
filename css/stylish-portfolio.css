@@ -7,8 +7,8 @@
 
 /* Global Styles */
 :root{
-  --color1: #330867;
-  --color2: #30cfd0;
+  --color1: #30cfd0;
+  --color2: #330867;
 }
 html,
 body {
@@ -16,7 +16,10 @@ body {
     height: 100%;
 }
 a {
-  color:var(--color2);
+  color:var(--color1);
+}
+a:hover{
+  color:var(--color2)
 }
 body {
     font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -218,7 +221,7 @@ hr.small {
     color: white;
     /*background-color:green;*/
     /*background: url(../img/callout.jpg) no-repeat center center scroll;*/
-    background: linear-gradient(var(--color1), var(--color2));
+    background: linear-gradient(var(--color2), var(--color1));
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
