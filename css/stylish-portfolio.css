@@ -26,8 +26,8 @@ body {
     font-family: var(--font1);
 }
 .centralColumn{
-  padding-right:20%;
-  padding-left:20%;
+  padding-right:15%;
+  padding-left:15%;
 }
 .resume_link{
   transition: transform .5s;
