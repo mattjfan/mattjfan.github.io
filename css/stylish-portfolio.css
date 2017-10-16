@@ -167,6 +167,13 @@ hr.small {
     right: 0;
 }
 
+#home-toggle {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
 
 #sidebar-wrapper.active {
     right: 250px;
@@ -180,7 +187,7 @@ hr.small {
 
 .toggle {
     font-size: 1em;
-    margin: 5px 5px 0 0;
+    margin: 5px 5px 5px 5px;
     padding: 15px 20px;
 }
 

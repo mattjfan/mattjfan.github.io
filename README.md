@@ -41,15 +41,21 @@ Having trouble with Pages? Check out our [documentation](https://help.github.com
 - Cool Cinemagraph?
 - I'm Interested in Hiring button
 ##Development
+- Maybe Fission?
+- Kudzu
 
 ##Design
 - Cad
 - Character Design
+- The drawing wall
+- Traditional Media art
 - More (Dribbble)
-- UX
 
 ##Engineering
 - Cad
-
+- FRC cad and stuff
+- OSV?
 ##Prior Work
 - Quarky
+- Kodactive?
+- Fission
