@@ -1,5 +1,5 @@
-Hi there! You've made it to my website source. Check me out at [here](mattfan.me)
-# Pages Planning
+Hi there! You've made it to my website source. Check me out [here](mattfan.me)
+# Pages Planning:
 ## Index
 - Cool Cinemagraph?
 - I'm Interested in Hiring button
