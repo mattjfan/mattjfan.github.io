@@ -9,8 +9,10 @@
 :root{
   --color1: #DCE35B;
   --color2: #45B649;
-  --font1:'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font1:'Droid Serif',  sans-serif; /*'Helvetica Neue', Helvetica, Arial,*/
 }
+
+
 html,
 body {
     width: 100%;
