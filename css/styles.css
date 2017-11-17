@@ -29,7 +29,7 @@ body {
 }
 
 .title{
-  font-size: 400%;
+  font-size: 450%;
   font-weight: 700;
   color:black;
 }
@@ -42,12 +42,4 @@ body {
 
 .small{
   width:15%;
-}
-
-.wrapper1{
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  margin: 0% 10%;
-  padding: 0;
 }
