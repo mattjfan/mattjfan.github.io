@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Matt Fan</title>
+    <link rel="icon"
+      type="image/png"
+      href="img/fan-icon.png">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+    <script src = 'https://cdn.rawgit.com/mattboldt/typed.js/master/lib/typed.min.js'></script>
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle">
+      <i class="fa fa-bars"></i>
+    </a>
+    <nav id="sidebar-wrapper">
+      <ul class="sidebar-nav">
+        <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle">
+          <i class="fa fa-times"></i>
+        </a>
+        <li class="sidebar-brand">
+          <a class="js-scroll-trigger" href="#homeBlock">Home</a>
+        </li>
+
+        <li>
+          <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="#contact" onclick=$( "#menu-close").click();>Contact</a>
+        </li>
+        <li>
+          <a class="js-scroll-trigger" href="about.html"><i>About</i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <aside id="homeBlock" class="callout">
+      <div class="text-vertical-center">
+        <h1 class='resume_link'><a class='resume_link' href="about.html" style="text-decoration: none">Matthew Fan</a></h1>
+        <span id="typed"></span>
+        <h4><span id ='typeable' class='js-typed'></span></h4>
+      </div>
+    </aside>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>My Work</strong>
+            </h4>
+            <hr class="small">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="https://www.startupshell.org">
+                    <img class="img-portfolio img-fluid" src="img/portfolioStartupShell.png">
+                  </a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="portfolio-item">
+                  <a href="http://www.quarkygames.com">
+                    <img class="img-portfolio img-fluid" src="img/portfolioQuarky.png">
+                  </a>
+
+                </div>
+              </div>
+            </div>
+            <!-- /.row (nested) -->
+            <!--a href="#" class="btn btn-dark">View More Items</a-->
+          </div>
+          <!-- /.col-lg-10 -->
+        </div>
+        <!-- /.row -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto text-center">
+            <h4>
+              <strong>Get in Touch!</strong>
+            </h4>
+            <!--p>3481 Melrose Place
+              <br>Beverly Hills, CA 90210</p-->
+            <ul class="list-unstyled">
+              <li>
+                <i class="fa fa-phone fa-fw"></i>
+                (240) 473-2968</li>
+              <li>
+                <i class="fa fa-envelope-o fa-fw"></i>
+                <a href="mailto:mfan@umd.edu">mfan@umd.edu</a>
+              </li>
+            </ul>
+
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/matt-fan/">
+                  <i class="gradient_link fa fa-linkedin fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://github.com/mattjfan">
+                  <i class=" gradient_link fa fa-github fa-fw fa-3x"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://dribbble.com/mfan">
+                  <i class=" gradient_link fa fa-dribbble fa-fw fa-3x"></i>
+                </a>
+              </li>
+            </ul>
+            <hr class="small">
+            <p class="text-muted">Copyright &copy; Matthew Fan 2017</p>
+          </div>
+        </div>
+      </div>
+      <a id="to-top" href="#top" class="btn btn-dark btn-lg js-scroll-trigger">
+        <i class="fa fa-chevron-up fa-fw fa-1x"></i>
+      </a>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/stylish-portfolio.js"></script>
+
+  </body>
+
+  <script>
+  var typed = new Typed('#typeable', {
+    strings: ["UI/UX Designer.","Software Developer.", "Graphic Designer.","Roboticist.","Inventor."],
+    typeSpeed: 60,
+    backDelay:800,
+    backSpeed:30,
+    loop:true,
+  });
+  </script>
+
+</html>
