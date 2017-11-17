@@ -32,12 +32,6 @@ body {
   font-size: 400%;
   font-weight: 700;
   color:black;
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  font-weight: 700;
-  margin: 0;
-  padding: 0;
 }
 
 .gradient_link {
@@ -48,4 +42,12 @@ body {
 
 .small{
   width:15%;
+}
+
+.wrapper1{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0% 5% 0% 5%;
+  padding: 0;
 }
