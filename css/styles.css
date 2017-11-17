@@ -5,9 +5,8 @@
 }
 
 body{
-  height:100%;
-  width:100%;
-  background: linear-gradient(var(--color1), var(--color2)) fixed;
+
+  background-color:white;
   font-family: var(--font1);
 }
 
@@ -34,7 +33,7 @@ hr{
 }
 
 .white-card{
-  background-color: #ffffff;
+    background-color: #ffffff;
 		color: #636363;
 		border-radius: 0.5em;
     margin: 2% 2%;
