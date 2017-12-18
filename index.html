@@ -41,26 +41,29 @@
   <body>
     <center>
       <br>
-      <img src='img/gifTest2.gif'>
+      <img id="profilePic" src='img/gifTest2.gif'>
       <br >
 
-      <h1 class='title'>Matthew Fan</h1>
-      <h4><span id ='typeable'></span></h4>
+      <h1 class='fadeable title'>Matthew Fan</h1>
+      <h4>Aspiring <span id ='typeable'></span></h4>
 
       <br>
 
     </center>
 
-    <div class='centralColumn'>
+    <div class='fadeable centralColumn'>
       Hi there!
       I'm <b>Matt</b>, a <b>Computer Science</b>
                 and <b>Mechanical Engineering</b> student at UMD.
-               I currently run <a href='https://www.startupshell.org/'><b>Startup Shell</b></a>, an awesome student-run startup incubator + freelance graphic design.
+               I currently run <a href='https://www.startupshell.org/'><b>Startup Shell</b></a>, an awesome student-run startup incubator + do freelance
+               <b><a href="https://dribbble.com/mfan">graphic design</a></b> and
+               <b><a href="https://github.com/mattjfan">web development</a></b>.
                Formerly, founder at <a href='http://www.quarkygames.com'><b>Quarky</b></a>.
               Interested? Take a
-      <strong><a href='secret/hireMe.pdf' download>resume.</a></strong>
+      <strong><a href='secret/hireMe.pdf' download>resume</a></strong>.
     </div>
-    <div class="mx-auto text-center">
+
+    <div class=" fadeable mx-auto text-center">
 
         </br>
         </br>
@@ -103,6 +106,9 @@
     <!-- Bootstrap core JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+
   </body>
 
   <script>
@@ -113,6 +119,9 @@
     backSpeed:30,
     loop:true,
   });
+
+  $('#profilePic').hide().show("slide", { direction: "down" }, 450);
+  $('.fadeable').hide().fadeIn(750);
   </script>
 
 </html>
