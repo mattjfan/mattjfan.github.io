@@ -5,6 +5,10 @@
   --font1:'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+* {
+    -webkit-overflow-scrolling: touch;
+}
+
 html,
 body {
     width: 100%;
