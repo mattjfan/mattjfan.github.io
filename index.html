@@ -41,7 +41,7 @@
   <body>
     <center>
       <br>
-      <img id="profilePic"  src='img/gifTest2.gif'>
+      <img id="profilePic"  src='img/gifTest3.gif'>
       <br >
 
       <h1 class='fadeable title'>Matthew Fan</h1>
@@ -56,11 +56,11 @@
       I'm <b>Matt</b>, a <b>Computer Science</b>
                 and <b>Mechanical Engineering</b> student at UMD.
                I currently run <a href='https://www.startupshell.org/'><b>Startup Shell</b></a>, an awesome student-run startup incubator + do freelance
-               <b><a href="https://dribbble.com/mfan">graphic design</a></b> and
-               <b><a href="https://github.com/mattjfan">web development</a></b>.
+               <a href="https://dribbble.com/mfan">graphic design</a> and
+               <a href="https://github.com/mattjfan">web development</a>.
                Formerly, founder at <a href='http://www.quarkygames.com'><b>Quarky</b></a>.
-              Interested? Take a
-      <strong><a href='secret/hireMe.pdf' download>resume</a></strong>.
+              Interested?
+              <strong>Take a <a href='secret/hireMe.pdf' download>Resume</a></strong>.
     </div>
 
     <div class=" fadeable mx-auto text-center">
@@ -107,9 +107,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 
-  </body>
+
+
 
   <script>
   var typed = new Typed('#typeable', {
@@ -122,6 +123,15 @@
 
   $('#profilePic').hide().show("slide", { direction: "down" }, 450);
   $('.fadeable').hide().fadeIn(750);
+
+  /*
+  $('html, body').animate({
+   scrollTop: $(document).height()-$(window).height()},
+   1400,
+   "easeOutQuint"
+  );*/
   </script>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+  </body>
 </html>
