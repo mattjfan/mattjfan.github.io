@@ -1,26 +1,2 @@
-Hi there! You've made it to my website source. Check me out [here](mattfan.me)
-# Pages Planning:
-## Index
-- Cool Cinemagraph?
-- I'm Interested in Hiring button
-##Development
-- Maybe Fission?
-- Kudzu
-
-## Design
-- Cad
-- Character Design
-- The drawing wall
-- Traditional Media art
-- More (Dribbble)
-
-## Engineering
-- Cad
-- FRC cad and stuff
-- OSV?
-## Prior Work
-- Quarky
-- Kodactive?
-- Fission
-
-*P.S. I've finished Hacktoberfest!!! Thanks DO!*
+Hi there 👋 You've made it to my Github! This is the source code for my
+personal website. You can check out the live version [here](http://mattfan.me)
