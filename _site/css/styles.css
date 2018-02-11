@@ -6,15 +6,10 @@
 html, body{
   font-family:'Work Sans', sans-serif;
   color:var(--color2);
-
-
 }
 
 .container{
   max-width:50vh;
-
-
-
 }
 
 @media only screen and (max-width: 768px) {
@@ -28,10 +23,12 @@ html, body{
 img{
   max-width:90%;
 }
+
 p{
   color:#8fa3c6;
   font-size:2.2vh;
 }
+
 .button1 {
     background-color: white;
     color: black;
