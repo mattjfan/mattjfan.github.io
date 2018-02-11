@@ -15,7 +15,7 @@ html, body{
 .vertical_center{
   display: flex;
  align-items: center;
- height:70vh;
+ height:75vh;
 }
 
 /*
@@ -31,7 +31,13 @@ p{
   color:#8fa3c6;
   font-size:2.2vh;
 }
-
+/*
+@media only screen and (max-width: 768px) {
+  p{
+    font-size:2.6vh;
+  }
+}
+*/
 .button1 {
     background-color: white;
     color: black;
@@ -52,6 +58,7 @@ p{
 }
 
 .footer {
+
   width:100%;
   max-width:100%;
   position: absolute;
@@ -95,7 +102,13 @@ a:active {
   font-weight: bold;
 }
 
-
+.divider{
+  border:none;
+  width:30vh;
+  height: 1px;
+  color: var(--color2);
+  background-color: var(--color2);
+}
 
 button {
   color: var(--color1);
