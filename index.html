@@ -2,7 +2,6 @@
 layout: default
 title: Hello
 ---
-<script></script>
 <center>
 <div id='header' class='header'>
   <a class='head-link' href='#' id='home' ><b>Home</b></a>
@@ -12,14 +11,14 @@ title: Hello
 </div>
 <br>
 
-<div class='vertical_center'>
+<div class='vertical_center'>;
 <div class='fadeable container'>
 
 <center>
 <h1> Hi There! I'm Matt.</h1>
 </center>
 <img class='slideable cardImage' src='img/main.gif'/>
-<p>Banneker-Key Scbolar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
+<p>Banneker-Key Scholar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
   and <a href='https://dribbble.com/mfan'><b>Graphic Design</b></a>.
 Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>. Founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
 
@@ -28,6 +27,16 @@ Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b>
 </div>
 </div>
 {% include footer.html %}
-
-
 </center>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("body").keydown(function(e) {
+  if(e.keyCode == 39) { // left
+      window.location.href = "/engineering";
+    }
+});
+
+
+</script>

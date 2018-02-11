@@ -22,7 +22,19 @@ Solidworks, ProE, 3D-Printing,
 Matlab, Multisim, Revit.</p>
 </div>
 </div>
-
 {% include footer.html %}
 
 </center>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("body").keydown(function(e) {
+  if(e.keyCode == 37) { //
+      window.location.href = "/";
+    }
+    else if(e.keyCode == 39) { //
+        window.location.href = "/programming";
+      }
+});
+</script>

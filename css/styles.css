@@ -72,7 +72,8 @@ p{
 
 h1{
   font-size:4vh;
-  color:var(--color1)
+  color:var(--color1);
+  font-weight: bold;
 }
 
 .head-link{
@@ -106,8 +107,8 @@ a:active {
   border:none;
   width:30vh;
   height: 1px;
-  color: var(--color2);
-  background-color: var(--color2);
+  color:#ccd9ed;
+  background-color: #ccd9ed;
 }
 
 button {

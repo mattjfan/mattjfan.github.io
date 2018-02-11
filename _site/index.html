@@ -13,11 +13,28 @@
   <!-- Custom Fonts -->
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="/css/styles.css">
+
+<script>
+//Fixes FOUC on firefox. Thanks Paul Irish! (https://www.paulirish.com/2009/fighting-the-font-face-fout/#defeatthefout)
+(function(){
+  // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
+  var d = document, e = d.documentElement, s = d.createElement('style');
+  if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
+    s.textContent = 'body{visibility:hidden}';
+    var r = document.getElementsByTagName('script')[0];
+    r.parentNode.insertBefore(s, r);
+    function f(){ s.parentNode && s.parentNode.removeChild(s); }
+    addEventListener('load',f,false);
+    setTimeout(f,3000);
+  }
+})();
+
+</script>
+
 </head>
 <body>
 
-  <script></script>
-<center>
+  <center>
 <div id='header' class='header'>
   <a class='head-link' href='#' id='home' ><b>Home</b></a>
   <a class='head-link' href='/engineering' id='engineering' >Engineering</a>
@@ -26,14 +43,14 @@
 </div>
 <br>
 
-<div class='vertical_center'>
+<div class='vertical_center'>;
 <div class='fadeable container'>
 
 <center>
 <h1> Hi There! I'm Matt.</h1>
 </center>
 <img class='slideable cardImage' src='img/main.gif'/>
-<p>Banneker-Key Scbolar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
+<p>Banneker-Key Scholar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
   and <a href='https://dribbble.com/mfan'><b>Graphic Design</b></a>.
 Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>. Founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
 
@@ -73,9 +90,19 @@ Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b>
       </ul>
     </div>
 
-
-
 </center>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("body").keydown(function(e) {
+  if(e.keyCode == 39) { // left
+      window.location.href = "/engineering";
+    }
+});
+
+
+</script>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

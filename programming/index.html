@@ -18,10 +18,22 @@ title: Programming
 <img class='slideable cardImage' src='/img/programming.gif'/>
 <p>Web development and
 back-end. Python, HTML, CSS,
-Javascript, Java, C, C++,  Haskell.</p>
+Javascript, Java, C, C++,  Haskell. Jekyll, Flask, Bootstrap, Jquery. Arduino, Raspberry Pi, AWS.</p>
 </div>
 </div>
 
 {% include footer.html %}
 
 </center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("body").keydown(function(e) {
+  if(e.keyCode == 37) {
+      window.location.href = "/engineering";
+    }
+    else if(e.keyCode == 39) {
+        window.location.href = "/design";
+      }
+});
+</script>

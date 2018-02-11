@@ -16,10 +16,18 @@ title: Engineering
 <h1>Graphic Design</h1>
 </center>
 <img class='slideable cardImage' src='/img/design.gif'/>
-<p>Graphic Design, Branding,
-Illustration, Web Design.
-Illustrator, Photoshop</p>
+<p>Branding, Logos, Illustration, Traditional Media, Industrial, Web.
+Illustrator, Photoshop, Pencil, Marker, Pen and Ink.</p>
 </div>
 </div>
 {% include footer.html %}
 </center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$("body").keydown(function(e) {
+  if(e.keyCode == 37) {
+      window.location.href = "/programming";
+    }
+});
+</script>
