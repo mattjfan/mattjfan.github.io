@@ -12,10 +12,16 @@ html, body{
   max-width:50vh;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-
+.vertical_center{
+  display: flex;
+ align-items: center;
+ height:70vh;
 }
+
+/*
+@media only screen and (max-width: 768px) {
+}
+*/
 
 img{
   max-width:80%;
