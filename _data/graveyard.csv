@@ -1,2 +1,0 @@
-name,description,reason
-Icefish,"Web extension to allow users to easily navigate through links on a page and subsequent pages using their browser's URL bar.","Difficulties parsing links on more complex sites, and issues with finding a linked page's links using only client side JS (same-origin policy). May revisit in the future when I get more savvy with JS."

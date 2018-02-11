@@ -1,75 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+title: Hello
+---
+<center>
+<div id='header' class='header'>
+  <a class='head-link' href='#' id='home' ><b>Home</b></a>
+  <a class='head-link' href='/engineering' id='engineering' >Engineering</a>
+  <a class='head-link' href='/programming' id='programming' >Programming</a>
+  <a class='head-link' href='/design' id='design' >Design</a>
+</div>
+<br>
+<div class='fadeable container'>
+<center>
+<h1> Hi There! I'm Matt.</h1>
+</center>
+<img class='slideable cardImage' src='img/main.gif'/>
+<p>Banneker-Key Scbolar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
+  and <a href='https://dribbble.com/mfan'><b>Graphic Design</b></a>.
+Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>. Founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
 
-  <!--👋 Hi there, I'm Matt!
-      Fancy seeing you here in my source code 🙃
-      Send me a ✉️ to mfan@umd.edu and let's talk 😉-->
+<a  href='/secret/hireMe.pdf' download><button class='fill'>Take a Resume!</button></a>
+<!--a  href='portfolio/'><button class='fill'>Check out my work!</button></a-->
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Hi there! I'm a designer, developer, and engineer studying at UMD + Executive Director at Startup Shell. Let's make something together.">
-    <meta name="author" content="Matthew Fan">
 
-    <title>Matt Fan</title>
-    <link rel="icon" type="image/png" href="img/face-icon.png">
+</div>
 
-    <!-- Bootstrap Core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-
-    <!-- TypedJS -->
-    <script src = 'https://cdn.rawgit.com/mattboldt/typed.js/master/lib/typed.min.js'></script>
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109281338-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-109281338-1');
-    </script>
-  </head>
-
-  <body>
-    <center>
-      <br>
-      <img id="profilePic"  src='img/gifTest3.gif'>
-      <br >
-
-      <h1 class='fadeable title'>Matthew Fan</h1>
-      <h4>Aspiring <span id ='typeable'></span></h4>
-
-      <br>
-
-    </center>
-
-    <div class='fadeable centralColumn'>
-      Hi there!
-      I'm <b>Matt</b>, a <b>Computer Science</b>
-                and <b>Mechanical Engineering</b> student at UMD.
-               I currently run <a href='https://www.startupshell.org/'><b>Startup Shell</b></a>, an awesome student-run startup incubator + do freelance
-               <a href="https://dribbble.com/mfan">graphic design</a> and
-               <a href="https://github.com/mattjfan">web development</a>.
-               Formerly, founder at <a href='http://www.quarkygames.com'><b>Quarky</b></a>.
-    </div>
-
-    <div class=" fadeable mx-auto text-center">
-        </br>
-        </br>
-        <a  href='secret/hireMe.pdf' download><button class='fill'>Take a Resume!</button></a>
-        <a  href='portfolio/'><button class='fill'>Check out my work!</button></a>
-
-        </br>
-        </br>
-
+<div class="mx-auto text-center footer">
       <h3><strong>Get in Touch!</strong></h3>
       <ul class="list-unstyled">
         <li>
@@ -98,41 +54,6 @@
           </a>
         </li>
       </ul>
-      <hr class="small">
-      <p class="text-muted">Crafted with ❤︎ by Matt Fan</p>
     </div>
 
-    </br>
-    </br>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-
-
-
-
-  <script>
-  var typed = new Typed('#typeable', {
-    strings: ["UI/UX Designer.","Software Developer.", "Graphic Designer.","Roboticist.","Inventor."],
-    typeSpeed: 60,
-    backDelay:800,
-    backSpeed:30,
-    loop:true,
-  });
-
-  $('#profilePic').hide().show("slide", { direction: "down" }, 450);
-  $('.fadeable').hide().fadeIn(750);
-
-  /*
-  $('html, body').animate({
-   scrollTop: $(document).height()-$(window).height()},
-   1400,
-   "easeOutQuint"
-  );*/
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
-  </body>
-</html>
+</center>
