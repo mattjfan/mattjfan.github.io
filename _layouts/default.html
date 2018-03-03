@@ -1,44 +1,81 @@
-<!DOCTYPE HTML>
-<html lang='en'>
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Hi there! I'm a designer, developer, and engineer studying at UMD + Executive Director at Startup Shell. Let's make something together.">
-  <meta name="author" content="Matthew Fan">
-  <title>Matt Fan | {{page.title}}</title>
-  <link rel="icon" type="image/png" href="/img/icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
-  <!-- Bootstrap Core CSS -->
-  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom Fonts -->
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{ "/css/styles.css" | prepend: site.baseurl }}">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Fan | {{page.title}}</title>
+    <link rel="icon" href="/img/fav.png" type="image/x-icon">
 
-<script>
-//Fixes FOUC on firefox. Thanks Paul Irish! (https://www.paulirish.com/2009/fighting-the-font-face-fout/#defeatthefout)
-(function(){
-  // if firefox 3.5+, hide content till load (or 3 seconds) to prevent FOUT
-  var d = document, e = d.documentElement, s = d.createElement('style');
-  if (e.style.MozTransform === ''){ // gecko 1.9.1 inference
-    s.textContent = 'body{visibility:hidden}';
-    var r = document.getElementsByTagName('script')[0];
-    r.parentNode.insertBefore(s, r);
-    function f(){ s.parentNode && s.parentNode.removeChild(s); }
-    addEventListener('load',f,false);
-    setTimeout(f,3000);
-  }
-})();
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
-</script>
+    <!-- main css -->
+    <link href="/css/style.css" rel="stylesheet">
 
+
+    <!-- modernizr -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
 </head>
+
 <body>
 
-  {{content}}
+    <!-- Preloader -->
+    {% include preloader.html %}
+    <!-- end Preloader -->
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="/"><i class="ion-android-arrow-back" style='font-size: 3em;'></i></a>
+            </div>
+            <!-- box-nav -->
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
 
-  <script src="/js/scripts.js"></script>
+        <!-- nav -->
+        {%include nav.html %}
+        <!-- end nav -->
+    </div>
+    {{content}}
+    <!--footer>
+        <div class="container-fluid">
+            <p class="copyright">Matthew Fan | 2018</p>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/animated-headline.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="/js/custom.js"></script>
+
 </body>
+
 </html>
