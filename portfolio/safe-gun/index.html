@@ -1,0 +1,41 @@
+---
+layout: default
+title: Safe Gun
+---
+
+
+<div class="container main-container">
+  <div class="col-md-12">
+    <img src="safegunw.png" alt="" class="img-responsive" />
+    <div class="h-30"></div>
+  </div>
+  <div class="col-md-12">
+    <h3 class="text-uppercase">Safe Gun</h3>
+    <h5>Hardware & Front-end | Team | 2018</h5>
+    <div class="h-30"></div>
+  </div>
+
+  <div class="col-md-12">
+    <p> I built Safe Gun over 24 hours at HackUVA with two friends as a proof of concept for a data-powered smart firearm. My roles in this project were designing and assembling the hardware,
+    writing the firmware, and building the front-end. We won a <a href='https://devpost.com/software/safe-gun'>Best Hack</a> award for this project.</p>
+    <p>The motivation for this project, in the wake of the Parkland shootings and with the hackathon corresponding with the March for our Lives, was to see if we could design a safer gun. The result
+    was a smart gun that took a different approach- focusing on collecting and being informed by data to improve safety. While our original idea was for this to be something that police officers could use,
+    with the onboard camera being a substitute for the sometimes unreliable body cameras, and the dashboard being something that could be monitored by dispatchers in real time. We think there's a notable
+  use case too for personal firearms- automatically disabling the weapon in highly populated areas, and being able to track location allows the gun itself to act as a mobile gun safe, with additional safety features
+and data collection capabilities. </p>
+    <p>The hardware end of the Safe Gun was designed to simulate key aspects of what a data-driven smart gun might look like. I designed the CAD for the 3d-printed enclosure, and wired up a button to simulate
+    trigger fire, an LED to indicate trigger pressing, and a piezo-electric buzzer to indicate a shot fired, along with a web-camera for video recording. While we initially wanted to use a Dragonboard or Raspberry Pi
+    with more impressive processing capabilities, I ended up wiring everything up to a tethered Arduino due to the limitations of the hardware available for us to use. The firmware was built using C for the Arduino,
+  in tangent with a locally hosted Node server to read data streamed from the Arduino.</p>
+    <p>From the software side, we built an externally hosted node server running the front-end, which integrated with Google Maps to allow us to do things like location tagging and automatically locking the gun at specified locations.
+    The front-end also allowed users to see a past log (with video footage), disable the gun remotely, and call for help. Some other things I built was a script to record video using Python and OpenCV, and some feature optimizations for the Node servers.</p>
+    <p>Languages we used were Javascript, HTML, CSS, C, and Python. Libraries we used include Node, Flask, Jquery, MongoDB, and Socket.io.</p>
+    <p>Next steps for this project would be to improve the amount and quality of the data we're collecting, and to design hardware for a version that could actually be mounted on a real gun.</p>
+    <p>You can check out the source code <a href='https://github.com/zackkhan/SafeGun'>here</a>.</p>
+
+  </div>
+</div>
+
+    <!-- footer -->
+
+    <!-- end footer -->
