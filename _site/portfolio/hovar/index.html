@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Fan | Engineering World Health</title>
+    <link rel="icon" href="/img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="/css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109281338-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109281338-1');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- end Preloader -->
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="/"><i class="ion-android-arrow-back" style='font-size: 3em;'></i></a>
+            </div>
+            <!-- box-nav -->
+
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+
+        <!-- nav -->
+        <nav>
+    <ul class="box-primary-nav">
+<!--
+        <li class="box-label">About me</li>
+
+        <li><a href="index.html">Intro</a> <i class="ion-ios-circle-filled color"></i></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">contact me</a></li>
+
+-->
+
+        <li class="box-label">Links + Stuff</li>
+        <li class="box-social"><a href="mailto:mfan@umd.edu"><i class="ion-email"></i></a></li>
+        <li class="box-social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="ion-social-linkedin"></i></a></li>
+        <li class="box-social"><a href="https://github.com/mattjfan"><i class="ion-social-github"></i></a></li>
+        <li class="box-social"><a href="https://dribbble.com/mfan"><i class="ion-social-dribbble"></i></a></li>
+
+    </ul>
+</nav>
+
+        <!-- end nav -->
+    </div>
+    <div class="container main-container">
+  <div class="col-md-12">
+    <img src="hovar_hero.png" alt="" class="img-responsive" />
+    <div class="h-30"></div>
+  </div>
+  <div class="col-md-12">
+    <h3 class="text-uppercase">Light-Projecting AR Drone (a.k.a. HovAR)</h3>
+    <h5>Hardware & Electronics | Team | 2018</h5>
+    <div class="h-30"></div>
+  </div>
+
+  <div class="col-md-12">
+    <p>I designed and built HovAR with two friends
+      during Bitcamp, a 36-hour hackathon at UMD. Aside from sourcing a few essential parts prior to the build, <b>the entire project was designed, built,
+      and programmed over the course of 36 hours</b>. My primary roles in the project were product design, graphic design, and
+      systems integration. We also won the <b>Most Unique Hack</b> award, sponsored by the 1517 fund.</p>
+      <p>HovAR came about as a simple idea- what if you didn't need bulky glasses or the clunky user experience of holding a screen in
+      front of your face to experience augmented reality? Our idea- an "AR Drone", a drone with an onboard processing chip, camera, and a projector that could
+    fly wherever you go, and seamlessly project AR experiences directly onto surfaces and into <i>real space</i>.</p>
+    <div class='figure'>
+      <center>
+      <img class='image'src='ss1.png'>
+    </center>
+        24 hours in- our first succesful test flight!
+    </div>
+    <p>The frame was largely based on a similar design by one of my partners on the project for a basic, low-cost tricopter. We updated the design for
+      this project by building a custom spring-suspension landing gear with high ground clearance to mitigate ground effect and increase the overall stability of
+      the drone, allowing the legs to fold-in to improve portability, and sticking a larger, 4-cell LiPo battery onto the frame to improve flight time and to support all
+      of the extra hardware on board. I worked on designing the mounting plates to minimize load on the non-load-bearing parts, and CAD'd and printed a modular mounting
+      system to support multiple orientations (downwards, straight ahead, and at a 45-degree angle).
+      <div class='figure'>
+        <center>
+        <img class='image'src='ss3.png'>
+      </center>
+          The HovAR drone in the folded position.
+      </div>
+      <p>Next, I worked on the systems integration, controls, and electronics for the drone. The controls system comprises of a KK2 flight control board and a radio transmitter
+      to allow us to test the UAV with teleoperated flight, and a seperate assembly with a Raspberry Pi 3, a 1080p camera, and a 130-lumen HD projector for AR processing- due to time and
+      material constraints, both the pi, projector, and core drone were powered by seperate battery supplies.
+    We originally wanted to integrate both of these systems into a single system, with the Pi GPIO running to the KK2, and a BEK board splitting the power supply to the core drone and
+  the pi and projector, making the system lighter and more efficient. Due to time and material constraints, as well as safety concerns if we were to make the HovAR autonomous, we decided
+to stick with the current system. </p>
+
+  <p>Finally, we worked on developing the software side of the drone. Due to multiple factors, we decided on simulating some possible applications of our AR drone without
+  actually implementing the full-on AR. One of the reasons we did this was that we only had 36 hours to not only design and build a drone from scratch, but also to create the
+software side and all of these applications. Another reason was that the projector we bought for the proof-of-concept was only 130 lumens, which meant that the low-light
+conditions that yielded the best results for our projections also yielded the poorest results for image quality, and in turn made it difficult to run effective CV processing.
+Some of the potential applications we decided to simulate were a real-time guidance system that projects directions directly onto the ground, and a search-and-rescue routine for
+finding and spotlighting targets. We also created a working interactive projection interface to browse the web using hand-tracking, but we weren't able to get it to work with the
+lighting conditions that the drone experiences in flight.</p>
+<div class='figure'>
+  <center>
+  <img class='image'src='ss4.png'>
+</center>
+See that arrow in front of me? That's a projection! (actual footage from test flight- view it <a href='https://www.youtube.com/watch?time_continue=117&v=zWix-1nG0uk'><b>here</b></a>!)
+</div>
+<div class='figure'>
+  <center>
+  <img class='image'src='ss2.png'>
+</center>
+    The HovAR drone testing a "search-and-rescue" routine on some keys.
+</div>
+    <p>We had a ton of fun making this drone and playing around with it, with the whole project landing at around $400 all said and done. While the tech isn't
+      quite there yet to make something like this a viable alternative to other personal smart devices right now, we're really hopeful for the future of
+      drone-based AR applications, and think that this field has some amazing potential.
+      You can check out a video we made with some of the flight and test footage <a href='https://www.youtube.com/watch?v=zWix-1nG0uk'><here</a>.</p>
+  </div>
+</div>
+
+    <!--footer>
+        <div class="container-fluid">
+            <p class="copyright">Matthew Fan | 2018</p>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/animated-headline.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="/js/custom.js"></script>
+
+</body>
+
+</html>
