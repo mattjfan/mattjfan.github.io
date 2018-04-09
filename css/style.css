@@ -1148,6 +1148,18 @@ textarea:focus {
     }
 }
 
+.figure{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+  width: 70%;
+  padding-top:2rem;
+  padding-bottom: 2rem;
+  font-size:1.2rem;
+  font-style: italic;
+  text-align: center;
+}
+
 @media only screen and (max-width: 670px) {
     .box-headline {
         font-size: 100px;
@@ -1169,8 +1181,12 @@ textarea:focus {
         font-size: 40px;
         line-height: 30px;
     }
+    h1{font-size:50px}
     .portfolio .categories-grid .categories ul li {
         float: none;
+    }
+    .figure {
+        width: 100%;
     }
 }
 
@@ -1202,17 +1218,6 @@ textarea:focus {
     }
 }
 
-.figure{
-  display: block;
- margin-left: auto;
- margin-right: auto;
-  max-width: 70%;
-  padding-top:2rem;
-  padding-bottom: 2rem;
-  font-size:1.2rem;
-  font-style: italic;
-  text-align: center;
-}
 .image{
    display: block;
   margin-left: auto;
