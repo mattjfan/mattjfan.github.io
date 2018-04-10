@@ -94,7 +94,14 @@
         <p><a href="#">Home</a> / <a href="#">portfolio</a> / project title</p>
     </div-->
     <!-- end top-bar -->
-
+    <style>
+    .critter{
+      padding-left:10px;
+      padding-right: 10px;
+      margin-bottom: 20px;
+      width:50px;
+    }
+    </style>
     <!-- main-container -->
     <div class="container main-container">
         <div class="col-md-12">
@@ -123,6 +130,17 @@
         and got my feet wet with HTML parsing with Regex and JS. Next steps for this project are writing a script to pretty up the speech bubbles (instead of
         just tooltips), shifting from regex parsing to a HTML parser (since some sites with irregular structures can confuse and break the parser I built), add a toggle
       to turn it on and off, and finally, officially release it on more browsers.  </p>
+      <div class='figure'>
+        <center>
+        <img class='critter' src='img/critter1_rest.png'  title='Comments show up here!'>
+        <img class='critter' src='img/critter2_rest.png'title='Comments show up here!'>
+        <img class='critter' src='img/critter3_rest.png'title='Comments show up here!'>
+        <img class='critter' src='img/critter4_rest.png'title='Comments show up here!'>
+        <img class='critter' src='img/critter5_rest.png'title='Comments show up here!'>
+        <img class='critter' src='img/critter6_rest.png'title='Comments show up here!'>
+      </center>
+          Try them out here!
+      </div>
           <p>The extension is currently live on the Firefox store <a href="https://addons.mozilla.org/en-US/firefox/addon/comment-critters/">here</a>,
             and the Chrome store <a href='https://chrome.google.com/webstore/detail/comment-critters/gfbkbeglbceeonopbimpdejbdofmflke'>here</a>. You can check out all the source files on Github
         <a href='https://github.com/mattjfan/comment-critters'>here</a>.</p>
@@ -130,6 +148,14 @@
 
 
 </div>
+<script src="/js/jquery-2.1.1.js"></script>
+<script>
+
+$('.critter').hover(function(){
+  $(this).attr("src",$(this).attr("src").split("_")[0]+"_active.png");
+},function(){$(this).attr("src",$(this).attr("src").split("_")[0]+"_rest.png")})
+
+</script>
 
     <!--footer>
         <div class="container-fluid">
