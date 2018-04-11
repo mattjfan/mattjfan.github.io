@@ -65,9 +65,43 @@ title: Comment Critters
 </div>
 <script src="/js/jquery-2.1.1.js"></script>
 <script>
-
+hipster_words=[
+"pork belly",
+"bespoke",
+'helvetica',
+'mustache',
+'DIY',
+'woke',
+'paleo',
+'meh',
+'whatever',
+'selfies',
+'vegan',
+'organic',
+'humblebrag',
+'quinoa',
+'8-bit', 'raw','gentrify','chillwave','food truck',
+'narwhal','chartreuse','unicorn','artisan','umami',
+'kombucha','taiyaki','polaroid','VHS','hella','schlitz'
+];
 $('.critter').hover(function(){
   $(this).attr("src",$(this).attr("src").split("_")[0]+"_active.png");
 },function(){$(this).attr("src",$(this).attr("src").split("_")[0]+"_rest.png")})
+
+function get_comment_content(min_words, max_words){
+  var i, n;
+  var phrase="";
+  n = Math.floor((max_words-min_words+1)*Math.random()+min_words);
+  for(i = 0;i<n;i++){
+    phrase = phrase+' '+hipster_words[Math.floor(Math.random()*hipster_words.length)];
+  }
+  return phrase;
+}
+$(document).ready(function () {
+     $('.critter').each(function(){
+        $(this).attr('title',get_comment_content(2,3));
+      });});
+
+
 
 </script>
