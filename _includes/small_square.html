@@ -1,0 +1,13 @@
+<div class="col-md-3 col-sm-6">
+    <a href="/portfolio/{{include.link}}" class="portfolio_item">
+        <img src="/img/{{include.image}}" alt="image" class="img-responsive" />
+        <div class="portfolio_item_hover">
+            <div class="portfolio-border clearfix">
+                <div class="item_info">
+                    <span>{{include.name}}</span>
+                    <em>{{include.description}} | {% if include.team %}Team{% else %}Solo{% endif %} |{{include.year}}</em>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>

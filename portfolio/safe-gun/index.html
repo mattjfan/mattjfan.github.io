@@ -23,6 +23,7 @@ title: Safe Gun
     with the onboard camera being a substitute for the sometimes unreliable body cameras, and the dashboard being something that could be monitored by dispatchers in real time. We think there's a notable
   use case too for personal firearms- automatically disabling the weapon in highly populated areas, and being able to track location allows the gun itself to act as a mobile gun safe, with additional safety features
 and data collection capabilities. </p>
+    {% include screenshot.html image='ss1.gif' comment='Safe gun in action!'%}
     <p>The hardware end of the Safe Gun was designed to simulate key aspects of what a data-driven smart gun might look like. I designed the CAD for the 3d-printed enclosure, and wired up a button to simulate
     trigger fire, an LED to indicate trigger pressing, and a piezo-electric buzzer to indicate a shot fired, along with a web-camera for video recording. While we initially wanted to use a Dragonboard or Raspberry Pi
     with more impressive processing capabilities, I ended up wiring everything up to a tethered Arduino due to the limitations of the hardware available for us to use. The firmware was built using C for the Arduino,

@@ -54,7 +54,7 @@ title: Comment Critters
         <img class='critter' src='img/critter5_rest.png'title='Comments show up here!'>
         <img class='critter' src='img/critter6_rest.png'title='Comments show up here!'>
       </center>
-          Try them out here!
+          If you're on mobile, try them out here!
       </div>
           <p>The extension is currently live on the Firefox store <a href="https://addons.mozilla.org/en-US/firefox/addon/comment-critters/">here</a>,
             and the Chrome store <a href='https://chrome.google.com/webstore/detail/comment-critters/gfbkbeglbceeonopbimpdejbdofmflke'>here</a>. You can check out all the source files on Github
@@ -65,25 +65,43 @@ title: Comment Critters
 </div>
 <script src="/js/jquery-2.1.1.js"></script>
 <script>
-hipster_words=[
+hip_adj=[
+  'gentrified','chillwave',
+  "bespoke",
+  'helvetica',
+  '8-bit', 'raw denim','DIY',
+  'woke',
+  'paleo',
+  'raw',
+  'organic',
+  'chartreuse',
+  'hella',
+  'vegan','meta','chic','artisan',
+  'heirloom','direct-trade','small batch','wearable',
+'acai','open-sourced',"Bernie Sanders's",'farm-to-table',
+'lo-fi','microdosing','post-ironic','retro','charcoal-infused','lit','literally'];
+
+hipster_words=['banjo','drone',
+  'bae','blog','hashtag',
 "pork belly",
-"bespoke",
-'helvetica',
+'pitchfork',
+'vape',
 'mustache',
-'DIY',
-'woke',
-'paleo',
-'meh',
-'whatever',
+'poutine',
+'avocado toast',
+'mixtape',
+'beard oil',
 'selfies',
-'vegan',
-'organic',
+'cronut',
+'distillery',
 'humblebrag',
 'quinoa',
-'8-bit', 'raw','gentrify','chillwave','food truck',
-'narwhal','chartreuse','unicorn','artisan','umami',
-'kombucha','taiyaki','polaroid','VHS','hella','schlitz'
+'sriracha',
+'food truck',
+'narwhal','unicorn','umami',
+'kombucha','taiyaki','polaroid','VHS','schlitz'
 ];
+
 $('.critter').hover(function(){
   $(this).attr("src",$(this).attr("src").split("_")[0]+"_active.png");
 },function(){$(this).attr("src",$(this).attr("src").split("_")[0]+"_rest.png")})
@@ -91,10 +109,16 @@ $('.critter').hover(function(){
 function get_comment_content(min_words, max_words){
   var i, n;
   var phrase="";
-  n = Math.floor((max_words-min_words+1)*Math.random()+min_words);
+  n = Math.floor((max_words-min_words+1)*Math.random()+min_words)-1;
   for(i = 0;i<n;i++){
-    phrase = phrase+' '+hipster_words[Math.floor(Math.random()*hipster_words.length)];
+    if (i==0){
+      phrase = hip_adj[Math.floor(Math.random()*hip_adj.length)];
+    }else{
+      phrase = phrase+' '+hip_adj[Math.floor(Math.random()*hip_adj.length)];
+    }
+
   }
+  phrase = phrase+' '+hipster_words[Math.floor(Math.random()*hipster_words.length)];
   return phrase;
 }
 $(document).ready(function () {

@@ -1,0 +1,119 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Fan | {{page.nlame}}</title>
+    <link rel="icon" href="/img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="{{site.baseurl}}/css/style.css" rel="stylesheet">
+
+    <!-- modernizr -->
+    <script src="{{site.baseurl}}/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109281338-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109281338-1');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    {% include preloader.html %}
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <!-- box-intro -->
+        <section class="box-intro" >
+            <div class="table-cell" >
+              <div class='padded-column'>
+                <h1>{{page.title}}</h1>
+              <img src='/img/{{page.image}}' style='max-width:75%;'>
+              <p>{{page.description}}</p>
+
+              </div>
+              <ul class="links">
+
+                  <li class="social"><a href="mailto:mfan@umd.edu"><i class="ion-email"></i></a></li>
+                  <li class="social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="ion-social-linkedin"></i></a></li>
+                  <li class="social"><a href="https://github.com/mattjfan"><i class="ion-social-github"></i></a></li>
+                  <li class="social"><a href="https://dribbble.com/mfan"><i class="ion-social-dribbble"></i></a></li>
+
+              </ul>
+
+            </div>
+
+            <!--div class="mouse">
+                <div class="scroll"></div>
+            </div-->
+        </section>
+        <!-- end box-intro -->
+    </div>
+
+    <!-- portfolio div -->
+    <div class="portfolio-div">
+        <div class="portfolio">
+          <div class="no-padding portfolio_container">
+          {{content}}
+          <!--
+                {% include small_square.html
+                  image="timg_commentcritters.png"
+                  link='comment-critters'
+                  name='Comment Critters'
+                  description='Web Extension'
+                  year='2017'
+                  %}
+      -->
+    </div>
+            <!-- end portfolio_container -->
+        </div>
+        <!-- portfolio -->
+    </div>
+    <!-- end portfolio div -->
+
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/animated-headline.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="/js/custom.js"></script>
+
+</body>
+
+</html>
