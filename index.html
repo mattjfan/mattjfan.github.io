@@ -47,309 +47,201 @@
     <!-- end Preloader -->
 
     <div class="container-fluid">
-        <!-- box header -->
-        <!--header class="box-header">
-            <div class="box-logo">
-                <a href="index.html"><img src="img/logo.png" width="80" alt="Logo"></a>
-            </div>
-            <!-- box-nav -->
-            <!--a class="box-primary-nav-trigger" href="#0">
-                <span class="box-menu-text">Menu</span><span class="box-menu-icon"></span>
-            </a-->
-            <!-- box-primary-nav-trigger -->
-        <!--/header-->
-        <!-- end box header -->
-
-        <!-- nav -->
-        <!-- end nav -->
-
-        <!-- box-intro -->
         <section class="box-intro" >
             <div class="table-cell" >
               <!--h1>Hi There! I'm Matt!</h1-->
               <div class='padded-column'>
                 <h1>Hi there! I'm Matt!</h1>
-              <img src='img/main.gif' style='max-width:75%;'>
-              <p>Matt Fan is a Banneker-Key Scholar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
-                  and <a href='https://dribbble.com/mfan'><b>Graphic Design</b></a>.
-                Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>. Founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
-
+                <img src='img/main.gif' style='max-width:75%;'>
+                <p>Matt Fan is a Banneker-Key Scholar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
+                  and <a href='https://dribbble.com/mfan'><b>Graphic Design</b></a>.<br>
+                    Developing at <a href='http://www.bespokepremium.com'><b>Bespoke</b></a>.
+                    Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>.<br> Formerly, founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
               </div>
               <ul class="links">
-
                   <li class="social"><a href="mailto:mfan@umd.edu"><i class="ion-email"></i></a></li>
                   <li class="social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="ion-social-linkedin"></i></a></li>
                   <li class="social"><a href="https://github.com/mattjfan"><i class="ion-social-github"></i></a></li>
                   <li class="social"><a href="https://dribbble.com/mfan"><i class="ion-social-dribbble"></i></a></li>
-
               </ul>
-
             </div>
-
-            <!--div class="mouse">
-                <div class="scroll"></div>
-            </div-->
         </section>
-        <!-- end box-intro -->
     </div>
 
     <!-- portfolio div -->
     <div class="portfolio-div">
         <div class="portfolio">
             <div class="no-padding portfolio_container">
-                <!-- single work -->
-                <!--div class="col-md-3 col-sm-6">
-                    <a href="portfolio/comment-critters" class="portfolio_item">
-                        <img src="img/timg_commentcritters.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Comment Critters</span>
-                                    <em>Web Extension | Solo |2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div-->
-                {% include small_square.html
-                  image="timg_commentcritters.png"
-                  link='comment-critters'
-                  name='Comment Critters'
-                  description='Web Extension'
-                  year='2017'
-                  %}
-                <!-- end single work -->
-                <div class="col-md-3 col-sm-6">
-                    <a href="portfolio/hovar" class="portfolio_item">
-                        <img src="img/hovar_noise.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Light-Projecting AR Drone</span>
-                                    <em>Hardware & Electronics| Team | 2018</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                
+<!-----------------------FIRST ROW-------------------------->
 
-                <!-- single work -->
-                <div class="col-md-6 col-sm-12">
-                  <a href="portfolio/writedaily" class="portfolio_item">
-                      <img src="img/wdlarge.png" alt="image" class="img-responsive" />
-                      <div class="portfolio_item_hover">
-                          <div class="portfolio-border clearfix">
-                              <div class="item_info">
-                                  <span>Writedaily.co</span>
-                                  <em>Web Dev & Branding | Team | 2018</em>
-                              </div>
-                          </div>
-                      </div>
-                  </a>
-                </div>
-                <!-- end single work -->
+{% include small_square.html
+    image="timg_commentcritters.png"
+    link='comment-critters'   
+    name='Comment Critters'
+    description='Web Extension'
+    year='2017'
+    %}
 
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6 graphics ads">
-                    <a href="portfolio/safe-gun" class="portfolio_item">
-                        <img src="img/safegun_mainsquare.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Safe Gun</span>
-                                    <em>Hardware & Front-end | Team | 2018</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
+    {% include small_square.html
+    image="hovar_noise.png"
+    link='hovar'
+    name='Image-Projecting AR Drone'
+    description='Hardware & Electronics'
+    year='2018'
+    team='yep'
+    %}
 
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6">
-                    <a href="portfolio/sloths-and-hearts" class="portfolio_item">
-                        <img src="img/timg_slothsandhearts.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Sloths & Hearts</span>
-                                    <em>Digital Art | Solo | 2018</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+    {% include large_square.html
+    image="wdlarge.png"
+    link='writedaily'
+    name='Writedaily.co'
+    description='Web Dev & Branding'
+    year='2018'
+    team='yep'
+    %}
 
-                <!-- end single work -->
+    {% include small_square.html
+    image="timg_stormbottle2.png"
+    link='storm-bottle'
+    name='Storm Bottle'
+    description='Electronics & Art'
+    year='2018'
+    %}  
+    
+    
+    
+    {% include small_square.html
+    image="timg_slothsandhearts.png"
+    link='sloths-and-hearts'
+    name='Sloths & Hearts'
+    description='Digital Art'
+    year='2018'
+    team='yep'
+    %}  
 
 
-                <!-- single work -->
-                <div class="col-md-6 col-sm-12 photography">
-                    <a href="portfolio/startup-shell" class="portfolio_item">
-                        <img src="img/timg_startupshell2.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                  <span>Startup Shell</span>
-                                  <em>Leadership + Entrepreneurship | Team | 2018</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6">
-                    <a href="portfolio/mister-muscle-wire" class="portfolio_item">
-                        <img src="img/timg_musclewire.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Mister Muscle(wire)</span>
-                                    <em>Hardware & Art | Solo | 2018</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
+<!----------------------SECOND ROW  ------------------------>
+{% include large_square.html
+    image="timg_startupshell2.png"
+    link='startup-shell'
+    name='Startup Shell'
+    description='Leadership + Entrepreneurship'
+    year='2018'
+    team='yep'
+    %}
 
-                <div class="col-md-3 col-sm-6">
-                    <a href="portfolio/web-wheels" class="portfolio_item">
-                        <img src="img/timg_webwheels.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Web Wheels</span>
-                                    <em>Web Dev & Graphic Design | Team | 2018</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
+    {% include small_square.html
+    image="timg_littlerays.png"
+    link='littlerays'
+    name='Wearable Nightlight'
+    description='Hardware and Wearables'
+    year='2018'
+    %}  
+    
 
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6 graphics ads">
-                    <a href="portfolio/osv" class="portfolio_item">
-                        <img src="img/timg_osv.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Over-Sand Vehicle</span>
-                                    <em>Hardware & Programming | Team | 2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
+    {% include small_square.html
+    image="timg_osv.png"
+    link='osv'   
+    name='Over-Sand Vehicle'
+    description='Hardware & Programming'
+    year='2017'
+    team='yep'
+    %}
 
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6">
-                    <a href="portfolio/kodactive" class="portfolio_item">
-                        <img src="img/timg_kodactive2.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Kodactive</span>
-                                    <em>UI & UX Design | Team | 2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-                <!-- single work -->
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6">
-                  <a href="portfolio/eip-coding-workshops" class="portfolio_item">
-                          <img src="img/timg_eipcw.png" alt="image" class="img-responsive" />
-                          <div class="portfolio_item_hover">
-                              <div class="portfolio-border clearfix">
-                                  <div class="item_info">
-                                      <span>EIP Coding Workshops</span>
-                                      <em>Programming & Education | Solo | 2018</em>
-                                  </div>
-                              </div>
-                          </div>
-                      </a>
-                </div>
+    {% include small_square.html
+    image="safegun_mainsquare.png"
+    link='safe-gun'
+    name='Safe Gun'
+    description='Hardware & Front-end'
+    year='2018'
+    team='yep'
+    %}      
 
-                <!-- end single work -->
-                <!--div class="col-md-3 col-sm-6">
-                    <a href="portfolio/mortality" class="portfolio_item">
-                        <img src="img/timg_mortality.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Mortality</span>
-                                    <em>Web Development | Solo | 2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div-->
-                <!-- end single work -->
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6 graphics ads">
-                    <a href="portfolio/organika" class="portfolio_item">
-                        <img src="img/timg_organika.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Organika</span>
-                                    <em>Illustration | Solo | 2016</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-                <!-- single work -->
-                <div class="col-md-6 col-sm-12">
-                    <a href="portfolio/quarky" class="portfolio_item">
-                        <img src="img/timg_quarky.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Quarky</span>
-                                    <em>Product Design & Entrepreneurship| Solo | 2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6 graphics ads">
-                    <a href="portfolio/kudzu" class="portfolio_item">
-                        <img src="img/timg_kudzu.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Kudzu</span>
-                                    <em>Web App Dev | Team | 2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
-                <!-- single work -->
-                <div class="col-md-3 col-sm-6 graphics ads">
-                    <a href="portfolio/fabric" class="portfolio_item">
-                        <img src="img/timg_fabric.png" alt="image" class="img-responsive" />
-                        <div class="portfolio_item_hover">
-                            <div class="portfolio-border clearfix">
-                                <div class="item_info">
-                                    <span>Fabric</span>
-                                    <em>Web Development | Solo | 2017</em>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!-- end single work -->
+    {% include small_square.html
+    image="timg_musclewire.png"
+    link='mister-muscle-wire'
+    name='Mister Muscle(wire)'
+    description='Hardware & Art'
+    year='2018'
+    %}   
+     
+
+<!----------------------THIRD ROW  ------------------------>
+
+{% include small_square.html
+    image="timg_webwheels2.png"
+    link='web-wheels'
+    name='Web Wheels'
+    description='Web Dev & Graphic Design'
+    year='2018'
+    team='yep'
+    %}  
+    {% include small_square.html
+    image="timg_kudzu.png"
+    link='kudzu'   
+    name='Kudzu'
+    description='Web App Dev'
+    year='2017'
+    team='yep'
+    %}
+
+    {% include large_square.html
+    image="timg_quarky.png"
+    link='quarky'
+    name='Quarky'
+    description='Product Design & Entrepreneurship'
+    year='2017'
+    %}
+
+    {% include small_square.html
+    image="timg_fabric.png"
+    link='fabric'
+    name='Fabric'
+    description='Web Development'
+    year='2017'
+    %}   
+     
+
+    {% include small_square.html
+    image="timg_organika.png"
+    link='organika'
+    name='Organika'
+    description='Illustration'
+    year='2016'
+    %}   
+
+    
+<!----------------------------------extras--------------
+    
+    {% include small_square.html
+    image="timg_mortality.png"
+    link='mortality'
+    name='Mortality'
+    description='Web Development'
+    year='2017'
+    %}  
+
+    
+    {% include small_square.html
+    image="timg_eipcw.png"
+    link='eip-coding-workshops'
+    name='EIP Coding Workshops'
+    description='Programming & Education'
+    year='2018'
+    %}  
+       
+    {% include small_square.html
+    image="timg_kodactive2.png"
+    link='kodactive'
+    name='Kodactive'
+    description='UI & UX Design'
+    year='2017'
+    team='yep'
+    %}
+             
+------------------------------------------------->
+
             </div>
             <!-- end portfolio_container -->
         </div>

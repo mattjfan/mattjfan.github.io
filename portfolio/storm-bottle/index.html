@@ -1,0 +1,59 @@
+---
+layout: default
+title: Storm Bottle
+---
+<div class="container main-container">
+    <div class="col-md-12">
+      <center>
+        <img src="lightning.png" alt="" class="img-responsive" style='text-align:center;'/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <h3 class="text-uppercase">Storm Bottle</h3>
+        <h5>Electronics & Art | Solo | 2018</h5>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+    <p>Storm Bottle started as a tiny weekend project to simply make something with the miscellaneous parts already at my disposal.
+      Along with the standard suite of CAD, 3d-printing, some soldering, and writing a bit of firmware, this project was a first foray
+      into a new finishing technique- spray painting - as well as a chance to learn hookups for the WS2812b IC for controlling RGB
+      led(s) with a single pin.
+    </p>
+    <p>Born initially out of boredom and a healthy appreciation of puns and idioms, the idea was to create a tiny droid - <b>lightning</b> -
+      to put into a glass bottle I had procured. In designing the functionality of this droid, I had originally considered adding a
+      piezo buzzer and vibration motor to make it more droid-like. In likely part due to a desire to keep the original design simple
+      and manageable (and due to a deficit of available parts), this instead inspired me to opt for a more modular design (I think
+      it's cool, too, that this has really nice conceptual synergy to an <a href='https://en.wikipedia.org/wiki/Impossible_bottle'>
+      Impossible Bottle</a>). Playing off of the storm analogy, it also made sense to group the sonic and kinetic properties into a
+      seperate droid - Thunder - and restrict the functionality of the lightning droid to things of a more optical or electrial nature.
+      Also, everybody knows that thunder comes <i>after</i> lightning 🙃.
+    </p>
+    
+      <p>
+        The first iteration of the Lightning droid is a toroidal design housing an RGB led. The led has an onboard WS2812b IC embedded,
+        which only needs power and a single input pin, and has support for chaining ICs with a programmable output pin. In a future version,
+        I might add a simple LRC flash circuit using this pin to toggle the gate to give Lightning some electrical features as well.
+      </p>
+      {% include screenshot.html 
+        image='img1b.gif'
+        comment='Lightning droid showing off some colors'
+        %}
+        <p>To facilitate the modular aspect of this design, I also created an extensible cap system, and a simple power distro
+          board with M3s as screw terminals to allow for easily adaptable interfacing with the Attiny85 that's controlling the
+          system. I decided to wire the modules using some winding wire I had lying around from a previous project, since the head
+          of the M3s didn't have enough purchase to allow me to easily secure standard gauge wires (which I found out when wiring the
+          controller to the board, since my screws and washers are zinc plated and don't take solder). Keeping with the theme, I've
+          decided to dub this power and controls assembly the <b>Storm Cloud</b>.
+        </p>
+    <p>Now that I made Lightning and the Storm Cloud, I think I'm going to take a break
+      from this project for a bit. Some adjustments that I feel like making in the future would be changing the power source to
+      something with a more discrete profile <i>(fun fact: I actually picked up the original battery holder when visiting Japan!)</i>
+      I'd also like to finish designing and printing the Storm Cloud assembly, and potentially finding a bottle with better optical
+      qualities. I also plan on creating some new modular 'droids' sometime in the future, and eventually making it into a true impossible
+      bottle, so keep on the lookout.
+    </p>
+  </div>
+
+</div>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Fan | Storm Bottle</title>
+    <link rel="icon" href="/img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="/css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109281338-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109281338-1');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- end Preloader -->
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="/"><i class="ion-android-arrow-back" style='font-size: 3em;'></i></a>
+            </div>
+            <!-- box-nav -->
+
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+
+        <!-- nav -->
+        <nav>
+    <ul class="box-primary-nav">
+<!--
+        <li class="box-label">About me</li>
+
+        <li><a href="index.html">Intro</a> <i class="ion-ios-circle-filled color"></i></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">contact me</a></li>
+
+-->
+
+        <li class="box-label">Links + Stuff</li>
+        <li class="box-social"><a href="mailto:mfan@umd.edu"><i class="ion-email"></i></a></li>
+        <li class="box-social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="ion-social-linkedin"></i></a></li>
+        <li class="box-social"><a href="https://github.com/mattjfan"><i class="ion-social-github"></i></a></li>
+        <li class="box-social"><a href="https://dribbble.com/mfan"><i class="ion-social-dribbble"></i></a></li>
+
+    </ul>
+</nav>
+
+        <!-- end nav -->
+    </div>
+    <div class="container main-container">
+    <div class="col-md-12">
+      <center>
+        <img src="lightning.png" alt="" class="img-responsive" style='text-align:center;'/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <h3 class="text-uppercase">Storm Bottle</h3>
+        <h5>Electronics & Art | Solo | 2018</h5>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+    <p>Storm Bottle started as a tiny weekend project to simply make something with the miscellaneous parts already at my disposal.
+      Along with the standard suite of CAD, 3d-printing, some soldering, and writing a bit of firmware, this project was a first foray
+      into a new finishing technique- spray painting - as well as a chance to learn hookups for the WS2812b IC for controlling RGB
+      led(s) with a single pin.
+    </p>
+    <p>Born initially out of boredom and a healthy appreciation of puns and idioms, the idea was to create a tiny droid - <b>lightning</b> -
+      to put into a glass bottle I had procured. In designing the functionality of this droid, I had originally considered adding a
+      piezo buzzer and vibration motor to make it more droid-like. In likely part due to a desire to keep the original design simple
+      and manageable (and due to a deficit of available parts), this instead inspired me to opt for a more modular design (I think
+      it's cool, too, that this has really nice conceptual synergy to an <a href='https://en.wikipedia.org/wiki/Impossible_bottle'>
+      Impossible Bottle</a>). Playing off of the storm analogy, it also made sense to group the sonic and kinetic properties into a
+      seperate droid - Thunder - and restrict the functionality of the lightning droid to things of a more optical or electrial nature.
+      Also, everybody knows that thunder comes <i>after</i> lightning 🙃.
+    </p>
+    
+      <p>
+        The first iteration of the Lightning droid is a toroidal design housing an RGB led. The led has an onboard WS2812b IC embedded,
+        which only needs power and a single input pin, and has support for chaining ICs with a programmable output pin. In a future version,
+        I might add a simple LRC flash circuit using this pin to toggle the gate to give Lightning some electrical features as well.
+      </p>
+      <div class='figure'>
+  <center>
+  <img class='image'src='img1b.gif'>
+</center>
+    Lightning droid showing off some colors
+</div>
+
+        <p>To facilitate the modular aspect of this design, I also created an extensible cap system, and a simple power distro
+          board with M3s as screw terminals to allow for easily adaptable interfacing with the Attiny85 that's controlling the
+          system. I decided to wire the modules using some winding wire I had lying around from a previous project, since the head
+          of the M3s didn't have enough purchase to allow me to easily secure standard gauge wires (which I found out when wiring the
+          controller to the board, since my screws and washers are zinc plated and don't take solder). Keeping with the theme, I've
+          decided to dub this power and controls assembly the <b>Storm Cloud</b>.
+        </p>
+    <p>Now that I made Lightning and the Storm Cloud, I think I'm going to take a break
+      from this project for a bit. Some adjustments that I feel like making in the future would be changing the power source to
+      something with a more discrete profile <i>(fun fact: I actually picked up the original battery holder when visiting Japan!)</i>
+      I'd also like to finish designing and printing the Storm Cloud assembly, and potentially finding a bottle with better optical
+      qualities. I also plan on creating some new modular 'droids' sometime in the future, and eventually making it into a true impossible
+      bottle, so keep on the lookout.
+    </p>
+  </div>
+
+</div>
+
+    <!--footer>
+        <div class="container-fluid">
+            <p class="copyright">Matthew Fan | 2018</p>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/animated-headline.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="/js/custom.js"></script>
+
+</body>
+
+</html>
