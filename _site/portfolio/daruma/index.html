@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Fan | Daruma Doll</title>
+    <link rel="icon" href="/img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- main css -->
+    <link href="/css/style.css" rel="stylesheet">
+
+
+    <!-- modernizr -->
+    <script src="/js/modernizr.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109281338-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109281338-1');
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+    <div class="pre-container">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+</div>
+
+    <!-- end Preloader -->
+    <div class="container-fluid">
+       <!-- box-header -->
+        <header class="box-header">
+            <div class="box-logo">
+                <a href="/"><i class="ion-android-arrow-back" style='font-size: 3em;'></i></a>
+            </div>
+            <!-- box-nav -->
+
+            <!-- box-primary-nav-trigger -->
+        </header>
+        <!-- end box-header -->
+
+        <!-- nav -->
+        <nav>
+    <ul class="box-primary-nav">
+<!--
+        <li class="box-label">About me</li>
+
+        <li><a href="index.html">Intro</a> <i class="ion-ios-circle-filled color"></i></li>
+        <li><a href="about.html">About me</a></li>
+        <li><a href="services.html">services</a></li>
+        <li><a href="portfolio.html">portfolio</a></li>
+        <li><a href="contact.html">contact me</a></li>
+
+-->
+
+        <li class="box-label">Links + Stuff</li>
+        <li class="box-social"><a href="mailto:mfan@umd.edu"><i class="ion-email"></i></a></li>
+        <li class="box-social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="ion-social-linkedin"></i></a></li>
+        <li class="box-social"><a href="https://github.com/mattjfan"><i class="ion-social-github"></i></a></li>
+        <li class="box-social"><a href="https://dribbble.com/mfan"><i class="ion-social-dribbble"></i></a></li>
+
+    </ul>
+</nav>
+
+        <!-- end nav -->
+    </div>
+    <div class="container main-container">
+    <div class="col-md-12">
+      <center>
+        <img src="hero.png" alt="" class="img-responsive" style='text-align:center;'/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <h3 class="text-uppercase">Daruma</h3>
+        <h5>Hardware & Art | Solo | 2018</h5>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+    <p> I've always known <a href='https://en.wikipedia.org/wiki/Daruma_doll'>daruma dolls</a>, the Japanese goal-setting talisman modelled after the <a href='https://en.wikipedia.org/wiki/Bodhidharma'>
+        <i>"blue-eyed barbarian"</i> Bodhidharma</a>, who brought buddhist teachings to Japan and China.
+        The dolls are used to help one achieve their goals, with the owner coloring in one of the eyes to signify the goal they want to achieve, and fililng in the second eye once
+        they've achieved that goal. I really like the Daruma concept, and ever since visiting Japan last winter, I've wanted to do something related to the daruma dolls.
+    </p>
+ 
+    <p> The mechatronic daruma doll I created, serves as a sort of "meditation timer", maintaining a calm, resting, blank-eyed state until the timer goes off, at which point
+        the eyes become filled and the doll begins vibrating. The eyes can be toggled between filled and closed using a thin hemi-cylinder attached to a servo, which can be set to
+        the corresponding positions, and an RGB led that backlights the eyes for extra effect. The vibration effect is achieved by using a small motor for vibration. As a side note,
+        a cool coincidence of this project was being able to implement the 'meditative' state using AVR's sleep function for extremely low-power consumption for extended durations.
+    </p>
+    <div class='figure'>
+  <center>
+  <img class='image'src='img2.gif'>
+</center>
+    "Instant Goal fulfillment"
+</div>
+
+    <p>There are some shortcomings with the current model- the primary one being that the forward bias voltage on the RGB led, and the power draw from the WS2812b and the servo motor
+        can't be met with the 3V coin battery I initially designed for. The electronics cavity also doesn't leave much room, which just makes assembly and adjustments to the design
+        more difficult. Another issue I ran into was that the back shell failed it's print around 80% through, leaving me to have to print another shell. On the upside, the resulting hole in
+        the back gives me more room for electronics, and allows me to easily utilize power supplies that don't fit in the current doll. Future improvements would cutting away the left
+        half of the internal housing to allow more room for electronics, as well as some small adjustments a couple of dimensions to get more comfortable tolerances. I would also try to adjust the designs
+        to reduce 3d print time (probably around 16+ hours total with the current set-up), by reducing supports, thinning the exterior walls, removing extraneous material on the inner housings, and
+        bringing down the fill density on some of the parts.
+    </p>
+    <div class='figure'>
+  <center>
+  <img class='image'src='img1b.png'>
+</center>
+    The Daruma Doll deconstructed
+</div>
+
+     <p>Overall, I'm pretty happy with how this project's coming along. Still working on it, so check back for updates.</p> 
+    
+  </div>
+
+</div>
+
+    <!--footer>
+        <div class="container-fluid">
+            <p class="copyright">Matthew Fan | 2018</p>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="/js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/menu.js"></script>
+    <script src="/js/animated-headline.js"></script>
+    <script src="/js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="/js/custom.js"></script>
+
+</body>
+
+</html>

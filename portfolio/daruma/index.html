@@ -1,0 +1,50 @@
+---
+layout: default
+title: Daruma Doll
+---
+<div class="container main-container">
+    <div class="col-md-12">
+      <center>
+        <img src="hero.png" alt="" class="img-responsive" style='text-align:center;'/>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+        <h3 class="text-uppercase">Daruma</h3>
+        <h5>Hardware & Art | Solo | 2018</h5>
+        <div class="h-30"></div>
+    </div>
+
+    <div class="col-md-12">
+    <p> I've always known <a href='https://en.wikipedia.org/wiki/Daruma_doll'>daruma dolls</a>, the Japanese goal-setting talisman modelled after the <a href='https://en.wikipedia.org/wiki/Bodhidharma'>
+        <i>"blue-eyed barbarian"</i> Bodhidharma</a>, who brought buddhist teachings to Japan and China.
+        The dolls are used to help one achieve their goals, with the owner coloring in one of the eyes to signify the goal they want to achieve, and fililng in the second eye once
+        they've achieved that goal. I really like the Daruma concept, and ever since visiting Japan last winter, I've wanted to do something related to the daruma dolls.
+    </p>
+ 
+    <p> The mechatronic daruma doll I created, serves as a sort of "meditation timer", maintaining a calm, resting, blank-eyed state until the timer goes off, at which point
+        the eyes become filled and the doll begins vibrating. The eyes can be toggled between filled and closed using a thin hemi-cylinder attached to a servo, which can be set to
+        the corresponding positions, and an RGB led that backlights the eyes for extra effect. The vibration effect is achieved by using a small motor for vibration. As a side note,
+        a cool coincidence of this project was being able to implement the 'meditative' state using AVR's sleep function for extremely low-power consumption for extended durations.
+    </p>
+    {% include screenshot.html 
+        image='img2.gif'
+        comment='"Instant Goal fulfillment"'
+        %}
+    <p>There are some shortcomings with the current model- the primary one being that the forward bias voltage on the RGB led, and the power draw from the WS2812b and the servo motor
+        can't be met with the 3V coin battery I initially designed for. The electronics cavity also doesn't leave much room, which just makes assembly and adjustments to the design
+        more difficult. Another issue I ran into was that the back shell failed it's print around 80% through, leaving me to have to print another shell. On the upside, the resulting hole in
+        the back gives me more room for electronics, and allows me to easily utilize power supplies that don't fit in the current doll. Future improvements would cutting away the left
+        half of the internal housing to allow more room for electronics, as well as some small adjustments a couple of dimensions to get more comfortable tolerances. I would also try to adjust the designs
+        to reduce 3d print time (probably around 16+ hours total with the current set-up), by reducing supports, thinning the exterior walls, removing extraneous material on the inner housings, and
+        bringing down the fill density on some of the parts.
+    </p>
+    {% include screenshot.html 
+        image='img1b.png'
+        comment='The Daruma Doll deconstructed'
+        %}
+     <p>Overall, I'm pretty happy with how this project's coming along. Still working on it, so check back for updates.</p> 
+    
+  </div>
+
+</div>
