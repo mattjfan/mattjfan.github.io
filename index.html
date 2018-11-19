@@ -15,7 +15,7 @@
     <!-- Bootstrap -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
     <!-- main css -->
     <link href="css/style.css" rel="stylesheet">
@@ -42,8 +42,8 @@
 </head>
 
 <body>
-
-    <!-- Preloader -->
+    <!--
+    <!-- Preloader --s>
     {% include preloader.html %}
     <!-- end Preloader -->
 
@@ -52,20 +52,20 @@
             <div class="table-cell" >
               <!--h1>Hi There! I'm Matt!</h1-->
               <div class='padded-column'>
-                <h1>Hi there! I'm Matt!</h1>
-                <img src='img/main.gif' style='max-width:75%;'>
-                <p>Matt Fan is a Banneker-Key Scholar at UMD studying Mechanical Engineering and Computer Science. Freelance <a href='https://www.github.com/mattjfan'><b>Web Development</b></a>
-                  and <a href='https://dribbble.com/mfan'><b>Graphic Design</b></a>.<br>
-                    Developing at <a href='http://www.bespokepremium.com'><b>Bespoke</b></a>.
-                    Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>.<br> Formerly, founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
+                <h1>Hi there, I'm Matt!</h1>
+                <img src='img/engineering.gif' style='max-width:75%;'>
+                <p>Matt Fan is a Banneker-Key Scholar at UMD studying <b>Mechanical Engineering</b> and <b>Computer Science</b>.
+                    Formerly, Developer at <a href='http://www.bespokepremium.com'><b>Bespoke</b></a>,
+                    Executive Director at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>,
+                    Founder at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
               </div>
               <ul class="links">
-                  <li class="social"><a href="mailto:mfan@umd.edu"><i class="ion-email"></i></a></li>
-                  <li class="social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="ion-social-linkedin"></i></a></li>
-                  <li class="social"><a href="https://github.com/mattjfan"><i class="ion-social-github"></i></a></li>
-                  <li class="social"><a href="https://dribbble.com/mfan"><i class="ion-social-dribbble"></i></a></li>
-                  <li class="social"><a href="https://www.behance.net/mfanca6f"><i class="fa fa-behance" aria-hidden="true"></i>
-</a></li>
+                  <li class="social"><a href="mailto:mfan@umd.edu"><i class="far fa-envelope"></i></a></li>
+                  <li class="social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="fab fa-linkedin"></i></a></li>
+                  <li class="social"><a href="https://github.com/mattjfan"><i class="fab fa-github"></i></a></li>
+                  <li class="social"><a href="https://dribbble.com/mfan"><i class="fab fa-dribbble"></i></a></li>
+                  <li class="social"><a href="https://www.behance.net/mfanca6f"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                  <li class="social"><a href="https://www.dropbox.com/s/yr5yiy959ccec7i/MattFanResume.docx?dl=0"><i class="far fa-file-alt" aria-hidden="true"></i></a></li>
               </ul>
             </div>
         </section>
@@ -140,12 +140,12 @@
     %}
 
     {% include small_square.html
-    image="timg_stormbottle2.png"
-    link='storm-bottle'
-    name='Storm Bottle'
-    description='Electronics & Art'
-    year='2018'
-    %}  
+        image="timg_hpp.png"
+        link='holonomic-plant-pot'
+        name='Holonomic Plant Pot'
+        description='Hardware & Electronics'
+        year='2018'
+        %}   
 
     {% include small_square.html
     image="safegun_mainsquare.png"
@@ -204,13 +204,77 @@
     %}  
 
     {% include small_square.html
-    image="timg_kudzu.png"
-    link='kudzu'   
-    name='Kudzu'
-    description='Web App Dev'
+        image="timg_stormbottle2.png"
+        link='storm-bottle'
+        name='Storm Bottle'
+        description='Electronics & Art'
+        year='2018'
+        %}  
+
+<!--------------------------------------------------------->
+{% include large_square.html
+    image="timg_koiception.png"
+    link='koiception'
+    name='Koiception'
+    description='Illustration'
+    year='2017'
+    %}  
+
+{% include small_square.html
+    image="timg_eipcw.png"
+    link='eip-coding-workshops'
+    name='EIP Coding Workshops'
+    description='Programming & Education'
+    year='2018'
+    %}  
+       
+    {% include small_square.html
+    image="timg_kodactive2.png"
+    link='kodactive'
+    name='Kodactive'
+    description='UI & UX Design'
     year='2017'
     team='yep'
-    %}
+    %} 
+
+    {% include small_square.html
+    image="timg_organika.png"
+    link='organika'
+    name='Organika'
+    description='Illustration'
+    year='2016'
+    %}   
+
+    
+    {% include small_square.html
+        image="timg_kudzu.png"
+        link='kudzu'   
+        name='Kudzu'
+        description='Web App Dev'
+        year='2017'
+        team='yep'
+        %}
+    
+<!----------------------------------extras--------------
+    
+    {% include small_square.html
+    image="timg_mortality.png"
+    link='mortality'
+    name='Mortality'
+    description='Web Development'
+    year='2017'
+    %}  
+
+        {% include small_square.html
+    image="timg_fabric.png"
+    link='fabric'
+    name='Fabric'
+    description='Web Development'
+    year='2017'
+    %}   
+    
+------------------------------------------------->
+
 <!----------------------Bottom Layer ---------------------->
 <!--
 {% include more_projects.html
@@ -237,52 +301,6 @@
     %}   
 -->    
 
-    
-<!----------------------------------extras--------------
-    
-    {% include small_square.html
-    image="timg_mortality.png"
-    link='mortality'
-    name='Mortality'
-    description='Web Development'
-    year='2017'
-    %}  
-
-    
-    {% include small_square.html
-    image="timg_eipcw.png"
-    link='eip-coding-workshops'
-    name='EIP Coding Workshops'
-    description='Programming & Education'
-    year='2018'
-    %}  
-       
-    {% include small_square.html
-    image="timg_kodactive2.png"
-    link='kodactive'
-    name='Kodactive'
-    description='UI & UX Design'
-    year='2017'
-    team='yep'
-    %}
-
-    {% include small_square.html
-    image="timg_fabric.png"
-    link='fabric'
-    name='Fabric'
-    description='Web Development'
-    year='2017'
-    %}   
-    
-    {% include small_square.html
-    image="timg_organika.png"
-    link='organika'
-    name='Organika'
-    description='Illustration'
-    year='2016'
-    %}   
-
-------------------------------------------------->
 
             </div>
             <!-- end portfolio_container -->
