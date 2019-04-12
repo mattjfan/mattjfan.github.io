@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Comment Critters
+title: Little Rays
 ---
 
     <!-- main-container -->
@@ -19,6 +19,7 @@ title: Comment Critters
         <div class="col-md-12">
           <p>Little Rays is an automatic wearable nightlight to help young kids conquer their
           fear of the dark.</p>
+          {% include screenshot.html image='img2.gif' comment="Testing out early prototype functionality and sensitivity- wow that's bright!" %}
         <p>I built Little Rays with an Attiny85 MPU, and some simple, commonly available discrete components.
         The basic idea was to use photoresistors to detect ambient light levels, and automatically turn on an
       LED if the room was dark enough. Originally, I had created a simple circuit without the Attiny85, using only discrete components
@@ -26,7 +27,7 @@ title: Comment Critters
   instead to include a simple FET transistor for a better effect. These implementations had two primary pitfalls- for one, the resultant intensity
 of the LEDS was noticeably dimmer than the peak intensity, and secondly, a discrete component implementation resulted in significantly higher current
 consumption than the MPU implementation.</p>
-{% include screenshot.html image='img2.gif' comment="Testing out early prototype functionality and sensitivity- wow that's bright!" %}
+{% include screenshot.html image='img1.png' comment='Final prototype, fits in a compact package' %}
 <p>The final product is lacking a bit on the aesthetic side (my computer was out for repair as I was finishing up the prototype, so
   I couldn't create any CAD models for the casing, and my knitting skills could use some work), but I'm happy with it as a proof of concept.
 The current model uses twin photoresistors to detect ambient light, and is powered by a coin battery which can power the device for well over a year
@@ -34,9 +35,9 @@ The current model uses twin photoresistors to detect ambient light, and is power
 to the Attiny's sleep capabilities, which I used to keep the device in an extremely low power (around 5uA!). But, since the device is designed to be perpetually "on"
 (even if the LED is off), I made some optimizations to the design such that the discrete components were all powered by outputs, so as not to draw power while not in use. I also
 programmed in an automatic shutoff, and a toggle switch to manually turn the light back on.</p>
-        {% include screenshot.html image='img1.png' comment='Final prototype, fits in a compact package' %}
+        {% include screenshot.html image='hero.gif' comment='It works!' %}
 <p>Overall, I'm pretty happy with how it turned out- it's a pretty functional proof of concept that delivers on brightness, cost, convenience, and battery life. Now that my computer's back,
-  I'm looking to redesign the casing, for a more polished presentation.
+  I'm looking to redesign the casing, for a more polished presentation. You can find all the files for the project <a href='https://github.com/addressableio/little-rays'> here</a>.
 </p>
 </div>
 
