@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Matt Fan | Comment Critters</title>
+    <title>Matt Fan | Little Rays</title>
     <link rel="icon" href="/img/fav.png" type="image/x-icon">
 
     <!-- Bootstrap -->
@@ -104,6 +104,13 @@
         <div class="col-md-12">
           <p>Little Rays is an automatic wearable nightlight to help young kids conquer their
           fear of the dark.</p>
+          <div class='figure'>
+  <center>
+  <img class='image'src='img2.gif'>
+</center>
+    Testing out early prototype functionality and sensitivity- wow that's bright!
+</div>
+
         <p>I built Little Rays with an Attiny85 MPU, and some simple, commonly available discrete components.
         The basic idea was to use photoresistors to detect ambient light levels, and automatically turn on an
       LED if the room was dark enough. Originally, I had created a simple circuit without the Attiny85, using only discrete components
@@ -113,9 +120,9 @@ of the LEDS was noticeably dimmer than the peak intensity, and secondly, a discr
 consumption than the MPU implementation.</p>
 <div class='figure'>
   <center>
-  <img class='image'src='img2.gif'>
+  <img class='image'src='img1.png'>
 </center>
-    Testing out early prototype functionality and sensitivity- wow that's bright!
+    Final prototype, fits in a compact package
 </div>
 
 <p>The final product is lacking a bit on the aesthetic side (my computer was out for repair as I was finishing up the prototype, so
@@ -127,13 +134,13 @@ to the Attiny's sleep capabilities, which I used to keep the device in an extrem
 programmed in an automatic shutoff, and a toggle switch to manually turn the light back on.</p>
         <div class='figure'>
   <center>
-  <img class='image'src='img1.png'>
+  <img class='image'src='hero.gif'>
 </center>
-    Final prototype, fits in a compact package
+    It works!
 </div>
 
 <p>Overall, I'm pretty happy with how it turned out- it's a pretty functional proof of concept that delivers on brightness, cost, convenience, and battery life. Now that my computer's back,
-  I'm looking to redesign the casing, for a more polished presentation.
+  I'm looking to redesign the casing, for a more polished presentation. You can find all the files for the project <a href='https://github.com/addressableio/little-rays'> here</a>.
 </p>
 </div>
 
