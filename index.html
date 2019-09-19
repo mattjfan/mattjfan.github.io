@@ -55,10 +55,22 @@
                 <h1>Hi there, I'm Matt!</h1>
                 <img src='img/engineering.gif' style='max-width:70%;'>
                 <p><b>Matt Fan</b> is a <a href='http://www.bannekerkey.umd.edu/'><b>Banneker/Key Scholar</b></a> and  <a href='https://fellows.kleinerperkins.com/meet-the-fellows'><b>Kleiner Perkins Engineering Fellow</b></a>
-                    studying <b>Mechanical Engineering</b> and <b>Computer Science</b> at UMD. <br>
-                    <b>Research Assistant</b> at the <a href='https://mrelab.com/'><b>Medical Robotics and Equipment Lab</b></a>. Formerly, <b>Software and Hardware Engineering Intern</b> at <a href='https://doordash.engineering/'><b>DoorDash</b></a>, <b>Developer</b> at <a href='http://www.bespokepremium.com'><b>Bespoke</b></a>,
+                    studying <b>Mechanical Engineering</b> and <b>Computer Science</b> at UMD.
+                    I make things in the domains of hardware, software, and design.
+                    <!-- <br> -->
+                    I'm currently a <b>Research Assistant</b> at the
+                    <a href='/experience/mre-lab/'><b> UMD Medical Robotics Lab</b></a>.
+                    <!-- Formerly, <b>Software and Hardware Engineering Intern</b> at <a href='https://doordash.engineering/'><b>DoorDash</b></a>, 
+                    <b>Developer</b> at <a href='http://www.bespokepremium.com'><b>Bespoke</b></a>,
                     <b>Executive Director</b> at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>,
-                    <b>Founder</b> at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a></p>
+                    <b>Founder</b> at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a> -->
+                    Formerly at 
+                        <a href='/experience/doordash/'><b>DoorDash</b></a>,
+                        <a href='/experience/bespoke/'><b>Bespoke</b></a>,
+                        <a href='/experience/startup-shell/'><b>Startup Shell</b></a>, and
+                        <a href='/experience/quarky/' ><b>Quarky</b></a>.
+
+                </p>
               </div>
               <ul class="links">
                   <li class="social"><a href="mailto:mfan@umd.edu"><i class="far fa-envelope"></i></a></li>
@@ -78,16 +90,26 @@
             <div class="no-padding portfolio_container">
                 
 <!-----------------------FIRST ROW-------------------------->
-
 {% include small_square.html
-    image="timg_commentcritters.png"
-    link='comment-critters'   
-    name='Comment Critters'
-    description='Web Extension'
-    year='2017'
-    %}
+    image="pluviam.png"
+    link='pluviam'
+    name='Pluviam'
+    description='Game Programming & Simulation'
+    team='yep'
+    year='2019'
+    %}    
+
 
     {% include small_square.html
+        image="squirrel.png"
+        link='squirrel-bot'
+        name='Squirrel Bot'
+        description='Hardware & Electronics'
+        team='yep'
+        year='2019'
+        %}   
+
+    {% include large_square.html
     image="hovar_noise.png"
     link='hovar'
     name='Image-Projecting AR Drone'
@@ -95,6 +117,34 @@
     year='2018'
     team='yep'
     %}
+
+    {% include small_square.html
+    image="safegun_mainsquare.png"
+    link='safe-gun'
+    name='Safe Gun'
+    description='Hardware & Front-end'
+    year='2018'
+    team='yep'
+    %}    
+
+
+    {% include small_square.html
+    image="timg_littlerays.png"
+    link='littlerays'
+    name='Wearable Nightlight'
+    description='Hardware and Wearables'
+    year='2018'
+    %}  
+    
+<!----------------------SECOND ROW  ------------------------>
+<!-- {% include large_square.html
+    image="timg_startupshell2.png"
+    link='startup-shell'
+    name='Startup Shell'
+    description='Leadership + Entrepreneurship'
+    year='2018'
+    team='yep'
+    %} -->
 
     {% include large_square.html
     image="wdlarge.png"
@@ -106,32 +156,30 @@
     %}
 
     {% include small_square.html
-    image="timg_slothsandhearts.png"
-    link='sloths-and-hearts'
-    name='Sloths & Hearts'
-    description='Digital Art'
-    year='2018'
-    team='yep'
-    %}  
+        image="timg_commentcritters.png"
+        link='comment-critters'   
+        name='Comment Critters'
+        description='Web Extension'
+        year='2017'
+        %}
+    
 
     {% include small_square.html
-    image="timg_littlerays.png"
-    link='littlerays'
-    name='Wearable Nightlight'
-    description='Hardware and Wearables'
+    image="timg_hpp.png"
+    link='holonomic-plant-pot'
+    name='Holonomic Plant Pot'
+    description='Hardware & Electronics'
     year='2018'
-    %}  
-    
-<!----------------------SECOND ROW  ------------------------>
-{% include large_square.html
-    image="timg_startupshell2.png"
-    link='startup-shell'
-    name='Startup Shell'
-    description='Leadership + Entrepreneurship'
+    %}   
+
+    {% include small_square.html
+    image="timg_webwheels2.png"
+    link='web-wheels'
+    name='Web Wheels'
+    description='Web Dev & Graphic Design'
     year='2018'
     team='yep'
-    %}
-
+    %} 
     {% include small_square.html
     image="timg_daruma.png"
     link='daruma'   
@@ -140,44 +188,67 @@
     year='2018'
     %}
 
-    {% include small_square.html
-        image="timg_hpp.png"
-        link='holonomic-plant-pot'
-        name='Holonomic Plant Pot'
-        description='Hardware & Electronics'
-        year='2018'
-        %}   
-
-    {% include small_square.html
-    image="safegun_mainsquare.png"
-    link='safe-gun'
-    name='Safe Gun'
-    description='Hardware & Front-end'
-    year='2018'
-    team='yep'
-    %}      
-
-    {% include small_square.html
-    image="timg_bespoke.png"
-    link='bespoke'
-    name='Bespoke Investment Group'
-    description='Software Dev & Design'
-    year='2018'
-    team='yep'
-    %}      
-
 
 
 <!----------------------THIRD ROW  ------------------------>
  
-{% include small_square.html
-    image="timg_webwheels2.png"
-    link='web-wheels'
-    name='Web Wheels'
-    description='Web Dev & Graphic Design'
-    year='2018'
+
+    {% include small_square.html
+    image="timg_kodactive2.png"
+    link='kodactive'
+    name='Kodactive'
+    description='UI & UX Design'
+    year='2017'
     team='yep'
     %} 
+
+    {% include small_square.html
+    image="timg_musclewire.png"
+    link='mister-muscle-wire'
+    name='Mister Muscle(wire)'
+    description='Hardware & Art'
+    year='2018'
+    %}  
+
+    {% include large_square.html
+    image="timg_slothsandhearts_lg.png"
+    link='sloths-and-hearts'
+    name='Sloths & Hearts'
+    description='Digital Art'
+    year='2018'
+    %}  
+    <!-- {% include large_square.html
+    image="timg_quarky.png"
+    link='quarky'
+    name='Quarky'
+    description='Product Design & Entrepreneurship'
+    year='2017'
+    %} -->
+
+    <!-- {% include small_square.html
+        image="timg_stormbottle2.png"
+        link='storm-bottle'
+        name='Storm Bottle'
+        description='Electronics & Art'
+        year='2018'
+        %}  
+     -->
+     <!-- {% include small_square.html
+        image="timg_bespoke.png"
+        link='bespoke'
+        name='Bespoke Investment Group'
+        description='Software Dev & Design'
+        year='2018'
+        team='yep'
+        %}     -->
+    {% include small_square.html
+    image="timg_kudzu.png"
+    link='kudzu'   
+    name='Kudzu'
+    description='Web App Dev'
+    year='2017'
+    team='yep'
+    %}
 
     {% include small_square.html
     image="timg_osv.png"
@@ -188,32 +259,9 @@
     team='yep'
     %}
 
-    {% include large_square.html
-    image="timg_quarky.png"
-    link='quarky'
-    name='Quarky'
-    description='Product Design & Entrepreneurship'
-    year='2017'
-    %}
-
-    {% include small_square.html
-    image="timg_musclewire.png"
-    link='mister-muscle-wire'
-    name='Mister Muscle(wire)'
-    description='Hardware & Art'
-    year='2018'
-    %}  
-
-    {% include small_square.html
-        image="timg_stormbottle2.png"
-        link='storm-bottle'
-        name='Storm Bottle'
-        description='Electronics & Art'
-        year='2018'
-        %}  
 
 <!--------------------------------------------------------->
-{% include large_square.html
+<!-- {% include large_square.html
     image="timg_koiception.png"
     link='koiception'
     name='Koiception'
@@ -254,7 +302,7 @@
         description='Web App Dev'
         year='2017'
         team='yep'
-        %}
+        %} -->
     
 <!----------------------------------extras--------------
     

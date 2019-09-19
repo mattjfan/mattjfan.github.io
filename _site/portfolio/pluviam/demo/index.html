@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | CMSC425 Final Game</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <script src="Build/UnityLoader.js"></script>
+    <script>
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/web_build_v1.json", {onProgress: UnityProgress});
+    </script>
+  </head>
+  <body>
+      <div class="container-fluid">
+          <!-- box-header -->
+           <header class="box-header">
+               <div class="box-logo">
+                   <a href="/portfolio/pluviam/"><i class="ion-android-arrow-back" style='font-size: 3em;'></i></a>
+               </div>
+               <!-- box-nav -->
+   
+               <!-- box-primary-nav-trigger -->
+           </header>
+           <!-- end box-header -->
+       </div>
+    <div class="webgl-content">
+      <div id="unityContainer" style="width: 960px; height: 600px"></div>
+      <div class="footer">
+        <div class="webgl-logo"></div>
+        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
+        <div class="title">Pluviam Demo</div>
+      </div>
+    </div>
+  </body>
+</html>

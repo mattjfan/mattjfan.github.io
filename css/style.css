@@ -55,7 +55,7 @@ body {
 }
 
 .main-container {
-    padding: 100px 0;
+    padding: 60px 0;
 }
 
 .center {
@@ -72,7 +72,7 @@ a {
 }
 
 .h-30 {
-    height: 30px
+    height: 15px
 }
 
 .h-10 {
@@ -230,7 +230,7 @@ h5 {
 
 .box-logo {
     display: block;
-    padding: 20px;
+    padding: 0px 30px;
 }
 
 .box-primary-nav-trigger {
