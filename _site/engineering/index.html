@@ -85,7 +85,7 @@
           <div class="no-padding portfolio_container">
           <div class="col-md-3 col-sm-6">
     <a href="/portfolio/comment-critters" class="portfolio_item">
-        <img src="/img/timg_quarky.png" alt="image" class="img-responsive" />
+        <img src="/img/thumbnail/timg_quarky.png" data-src="/img/timg_quarky.png" alt="image" class="img-responsive" />
         <div class="portfolio_item_hover">
             <div class="portfolio-border clearfix">
                 <div class="item_info">
@@ -101,7 +101,7 @@
 
 <div class="col-md-3 col-sm-6">
     <a href="/portfolio/comment-critters" class="portfolio_item">
-        <img src="/img/safegun_mainsquare.png" alt="image" class="img-responsive" />
+        <img src="/img/thumbnail/safegun_mainsquare.png" data-src="/img/safegun_mainsquare.png" alt="image" class="img-responsive" />
         <div class="portfolio_item_hover">
             <div class="portfolio-border clearfix">
                 <div class="item_info">
@@ -116,7 +116,7 @@
 
 <div class="col-md-6 col-sm-12">
     <a href="/portfolio/hovar" class="portfolio_item">
-        <img src="/img/hovar_noise.png" alt="image" class="img-responsive" />
+        <img src="/img/thumbnail/hovar_noise.png" data-src="/img/hovar_noise.png" alt="image" class="img-responsive" />
         <div class="portfolio_item_hover">
             <div class="portfolio-border clearfix">
                 <div class="item_info">
@@ -131,7 +131,7 @@
 
 <div class="col-md-3 col-sm-6">
     <a href="/portfolio/comment-critters" class="portfolio_item">
-        <img src="/img/timg_musclewire.png" alt="image" class="img-responsive" />
+        <img src="/img/thumbnail/timg_musclewire.png" data-src="/img/timg_musclewire.png" alt="image" class="img-responsive" />
         <div class="portfolio_item_hover">
             <div class="portfolio-border clearfix">
                 <div class="item_info">
@@ -146,7 +146,7 @@
 
 <div class="col-md-3 col-sm-6">
     <a href="/portfolio/comment-critters" class="portfolio_item">
-        <img src="/img/timg_osv.png" alt="image" class="img-responsive" />
+        <img src="/img/thumbnail/timg_osv.png" data-src="/img/timg_osv.png" alt="image" class="img-responsive" />
         <div class="portfolio_item_hover">
             <div class="portfolio-border clearfix">
                 <div class="item_info">
@@ -162,7 +162,7 @@
           <!--
                 <div class="col-md-3 col-sm-6">
     <a href="/portfolio/comment-critters" class="portfolio_item">
-        <img src="/img/timg_commentcritters.png" alt="image" class="img-responsive" />
+        <img src="/img/thumbnail/timg_commentcritters.png" data-src="/img/timg_commentcritters.png" alt="image" class="img-responsive" />
         <div class="portfolio_item_hover">
             <div class="portfolio-border clearfix">
                 <div class="item_info">
@@ -200,7 +200,152 @@
 
     <!--  custom script -->
     <script src="/js/custom.js"></script>
-
+    <script>
+(function (root, factory) {
+    if (typeof define === 'function' && define.amd) {
+      define(function() {
+        return factory(root);
+      });
+    } else if (typeof exports === 'object') {
+      module.exports = factory;
+    } else {
+      root.echo = factory(root);
+    }
+  })(this, function (root) {
+  
+    'use strict';
+  
+    var echo = {};
+  
+    var callback = function () {};
+  
+    var offset, poll, delay, useDebounce, unload;
+  
+    var isHidden = function (element) {
+      return (element.offsetParent === null);
+    };
+    
+    var inView = function (element, view) {
+      if (isHidden(element)) {
+        return false;
+      }
+  
+      var box = element.getBoundingClientRect();
+      return (box.right >= view.l && box.bottom >= view.t && box.left <= view.r && box.top <= view.b);
+    };
+  
+    var debounceOrThrottle = function () {
+      if(!useDebounce && !!poll) {
+        return;
+      }
+      clearTimeout(poll);
+      poll = setTimeout(function(){
+        echo.render();
+        poll = null;
+      }, delay);
+    };
+  
+    echo.init = function (opts) {
+      opts = opts || {};
+      var offsetAll = opts.offset || 0;
+      var offsetVertical = opts.offsetVertical || offsetAll;
+      var offsetHorizontal = opts.offsetHorizontal || offsetAll;
+      var optionToInt = function (opt, fallback) {
+        return parseInt(opt || fallback, 10);
+      };
+      offset = {
+        t: optionToInt(opts.offsetTop, offsetVertical),
+        b: optionToInt(opts.offsetBottom, offsetVertical),
+        l: optionToInt(opts.offsetLeft, offsetHorizontal),
+        r: optionToInt(opts.offsetRight, offsetHorizontal)
+      };
+      delay = optionToInt(opts.throttle, 250);
+      useDebounce = opts.debounce !== false;
+      unload = !!opts.unload;
+      callback = opts.callback || callback;
+      echo.render();
+      if (document.addEventListener) {
+        root.addEventListener('scroll', debounceOrThrottle, false);
+        root.addEventListener('load', debounceOrThrottle, false);
+      } else {
+        root.attachEvent('onscroll', debounceOrThrottle);
+        root.attachEvent('onload', debounceOrThrottle);
+      }
+    };
+  
+    echo.render = function (context) {
+      var nodes = (context || document).querySelectorAll('[data-src], [data-src-background]');
+      var length = nodes.length;
+      var src, elem;
+      var view = {
+        l: 0 - offset.l,
+        t: 0 - offset.t,
+        b: (root.innerHeight || document.documentElement.clientHeight) + offset.b,
+        r: (root.innerWidth || document.documentElement.clientWidth) + offset.r
+      };
+      for (var i = 0; i < length; i++) {
+        elem = nodes[i];
+        if (inView(elem, view)) {
+  
+          if (unload) {
+            elem.setAttribute('data-src-placeholder', elem.src);
+          }
+  
+          if (elem.getAttribute('data-src-background') !== null) {
+            elem.style.backgroundImage = 'url(' + elem.getAttribute('data-src-background') + ')';
+          }
+          else if (elem.src !== (src = elem.getAttribute('data-src'))) {
+            elem.src = src;
+          }
+  
+          if (!unload) {
+            elem.removeAttribute('data-src');
+            elem.removeAttribute('data-src-background');
+          }
+  
+          callback(elem, 'load');
+        }
+        else if (unload && !!(src = elem.getAttribute('data-src-placeholder'))) {
+  
+          if (elem.getAttribute('data-src-background') !== null) {
+            elem.style.backgroundImage = 'url(' + src + ')';
+          }
+          else {
+            elem.src = src;
+          }
+  
+          elem.removeAttribute('data-src-placeholder');
+          callback(elem, 'unload');
+        }
+      }
+      if (!length) {
+        echo.detach();
+      }
+    };
+  
+    echo.detach = function () {
+      if (document.removeEventListener) {
+        root.removeEventListener('scroll', debounceOrThrottle);
+      } else {
+        root.detachEvent('onscroll', debounceOrThrottle);
+      }
+      clearTimeout(poll);
+    };
+  
+    return echo;
+  
+  });
+</script>
+<script>
+    echo.init({
+      offset: 2500,
+      throttle: 250,
+      unload: false,
+      callback: function (element, op) {
+        //console.log(element, 'has been', op + 'ed')
+      }
+    });
+</script>
 </body>
 
 </html>
