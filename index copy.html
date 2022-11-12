@@ -1,0 +1,389 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Matt Fan | Hello</title>
+    <link rel="icon" href="img/fav.png" type="image/x-icon">
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+
+    <!-- main css -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.0.0/dist/lazyload.min.js"></script>
+    <!-- modernizr -->
+    <script src="js/modernizr.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-109281338-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-109281338-1');
+    </script>
+
+</head>
+
+<body>
+    <!--
+    <!-- Preloader --s>
+    {% include preloader.html %}
+    <!-- end Preloader -->
+
+    <div class="container-fluid">
+        <section class="box-intro" >
+            <div class="table-cell" >
+              <!--h1>Hi There! I'm Matt!</h1-->
+              <div class='padded-column'>
+                <h1>Hi there, I'm Matt!</h1>
+                <img src='img/engineering.gif' style='max-width:70%;'>
+                <p><b>Matt Fan</b> is a <a href='http://www.bannekerkey.umd.edu/'><b>Banneker/Key Scholar</b></a> and  <a href='https://fellows.kleinerperkins.com/meet-the-fellows'><b>Kleiner Perkins Engineering Fellow</b></a>
+                    studying <b>Mechanical Engineering</b> and <b>Computer Science</b> at UMD.
+                    I make things in the domains of hardware, software, and design.
+                    <!-- <br> -->
+                    I'm currently a <b>Research Assistant</b> at the
+                    <a href='/experience/mre-lab/'><b> UMD Medical Robotics Lab</b></a>.
+                    <!-- Formerly, <b>Software and Hardware Engineering Intern</b> at <a href='https://doordash.engineering/'><b>DoorDash</b></a>, 
+                    <b>Developer</b> at <a href='http://www.bespokepremium.com'><b>Bespoke</b></a>,
+                    <b>Executive Director</b> at <a href='http://www.startupshell.org'><b>Startup Shell</b></a>,
+                    <b>Founder</b> at <a href='http://www.quarkygames.com' ><b>Quarky.</b></a> -->
+                    Formerly at 
+                        <a href='/experience/doordash/'><b>DoorDash</b></a>,
+                        <a href='/experience/bespoke/'><b>Bespoke</b></a>,
+                        <a href='/experience/startup-shell/'><b>Startup Shell</b></a>, and
+                        <a href='/experience/quarky/' ><b>Quarky</b></a>.
+
+                </p>
+              </div>
+              <ul class="links">
+                  <li class="social"><a href="mailto:mfan@umd.edu"><i class="far fa-envelope"></i></a></li>
+                  <li class="social"><a href="https://www.linkedin.com/in/matt-fan/"><i class="fab fa-linkedin"></i></a></li>
+                  <li class="social"><a href="https://github.com/mattjfan"><i class="fab fa-github"></i></a></li>
+                  <li class="social"><a href="https://dribbble.com/mfan"><i class="fab fa-dribbble"></i></a></li>
+                  <li class="social"><a href="https://www.behance.net/mattjfan"><i class="fab fa-behance" aria-hidden="true"></i></a></li>
+                  <li class="social"><a href="https://www.dropbox.com/s/yr5yiy959ccec7i/MattFanResume.docx?dl=0"><i class="far fa-file-alt" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+        </section>
+    </div>
+
+    <!-- portfolio div -->
+    <div class="portfolio-div">
+        <div class="portfolio">
+            <div class="no-padding portfolio_container">
+                
+<!-----------------------FIRST ROW-------------------------->
+{% include small_square.html
+    image="pluviam.png"
+    link='pluviam'
+    name='Pluviam'
+    description='Game Programming & Simulation'
+    team='yep'
+    year='2019'
+    %}    
+
+
+    {% include small_square.html
+        image="squirrel.png"
+        link='squirrel-bot'
+        name='Squirrel Bot'
+        description='Hardware & Electronics'
+        team='yep'
+        year='2019'
+        %}   
+
+    {% include large_square.html
+    image="hovar_noise.png"
+    link='hovar'
+    name='Image-Projecting AR Drone'
+    description='Hardware & Electronics'
+    year='2018'
+    team='yep'
+    %}
+
+    {% include small_square.html
+    image="safegun_mainsquare.png"
+    link='safe-gun'
+    name='Safe Gun'
+    description='Hardware & Front-end'
+    year='2018'
+    team='yep'
+    %}    
+
+
+    {% include small_square.html
+    image="timg_littlerays.png"
+    link='littlerays'
+    name='Wearable Nightlight'
+    description='Hardware and Wearables'
+    year='2018'
+    %}  
+    
+<!----------------------SECOND ROW  ------------------------>
+<!-- {% include large_square.html
+    image="timg_startupshell2.png"
+    link='startup-shell'
+    name='Startup Shell'
+    description='Leadership + Entrepreneurship'
+    year='2018'
+    team='yep'
+    %} -->
+
+    {% include large_square.html
+    image="wdlarge.png"
+    link='writedaily'
+    name='Writedaily.co'
+    description='Web Dev & Branding'
+    year='2018'
+    team='yep'
+    %}
+
+    {% include small_square.html
+        image="timg_commentcritters.png"
+        link='comment-critters'   
+        name='Comment Critters'
+        description='Web Extension'
+        year='2017'
+        %}
+    
+
+    {% include small_square.html
+    image="timg_hpp.png"
+    link='holonomic-plant-pot'
+    name='Holonomic Plant Pot'
+    description='Hardware & Electronics'
+    year='2018'
+    %}   
+
+    {% include small_square.html
+    image="timg_webwheels2.png"
+    link='web-wheels'
+    name='Web Wheels'
+    description='Web Dev & Graphic Design'
+    year='2018'
+    team='yep'
+    %} 
+    {% include small_square.html
+    image="timg_daruma.png"
+    link='daruma'   
+    name='Daruma Doll'
+    description='Hardware & Art'
+    year='2018'
+    %}
+
+
+
+<!----------------------THIRD ROW  ------------------------>
+ 
+
+    {% include small_square.html
+    image="timg_kodactive2.png"
+    link='kodactive'
+    name='Kodactive'
+    description='UI & UX Design'
+    year='2017'
+    team='yep'
+    %} 
+
+    {% include small_square.html
+    image="timg_musclewire.png"
+    link='mister-muscle-wire'
+    name='Mister Muscle(wire)'
+    description='Hardware & Art'
+    year='2018'
+    %}  
+
+    {% include large_square.html
+    image="timg_slothsandhearts_lg.png"
+    link='sloths-and-hearts'
+    name='Sloths & Hearts'
+    description='Digital Art'
+    year='2018'
+    %}  
+    <!-- {% include large_square.html
+    image="timg_quarky.png"
+    link='quarky'
+    name='Quarky'
+    description='Product Design & Entrepreneurship'
+    year='2017'
+    %} -->
+
+    <!-- {% include small_square.html
+        image="timg_stormbottle2.png"
+        link='storm-bottle'
+        name='Storm Bottle'
+        description='Electronics & Art'
+        year='2018'
+        %}  
+     -->
+     <!-- {% include small_square.html
+        image="timg_bespoke.png"
+        link='bespoke'
+        name='Bespoke Investment Group'
+        description='Software Dev & Design'
+        year='2018'
+        team='yep'
+        %}     -->
+    {% include small_square.html
+    image="timg_kudzu.png"
+    link='kudzu'   
+    name='Kudzu'
+    description='Web App Dev'
+    year='2017'
+    team='yep'
+    %}
+
+    {% include small_square.html
+    image="timg_osv.png"
+    link='osv'   
+    name='Over-Sand Vehicle'
+    description='Hardware & Programming'
+    year='2017'
+    team='yep'
+    %}
+
+
+<!--------------------------------------------------------->
+<!-- {% include large_square.html
+    image="timg_koiception.png"
+    link='koiception'
+    name='Koiception'
+    description='Illustration'
+    year='2017'
+    %}  
+
+{% include small_square.html
+    image="timg_eipcw.png"
+    link='eip-coding-workshops'
+    name='EIP Coding Workshops'
+    description='Programming & Education'
+    year='2018'
+    %}  
+       
+    {% include small_square.html
+    image="timg_kodactive2.png"
+    link='kodactive'
+    name='Kodactive'
+    description='UI & UX Design'
+    year='2017'
+    team='yep'
+    %} 
+
+    {% include small_square.html
+    image="timg_organika.png"
+    link='organika'
+    name='Organika'
+    description='Illustration'
+    year='2016'
+    %}   
+
+    
+    {% include small_square.html
+        image="timg_kudzu.png"
+        link='kudzu'   
+        name='Kudzu'
+        description='Web App Dev'
+        year='2017'
+        team='yep'
+        %} -->
+    
+<!----------------------------------extras--------------
+    
+    {% include small_square.html
+    image="timg_mortality.png"
+    link='mortality'
+    name='Mortality'
+    description='Web Development'
+    year='2017'
+    %}  
+
+        {% include small_square.html
+    image="timg_fabric.png"
+    link='fabric'
+    name='Fabric'
+    description='Web Development'
+    year='2017'
+    %}   
+    
+------------------------------------------------->
+
+<!----------------------Bottom Layer ---------------------->
+<!--
+{% include more_projects.html
+    image="timg_engineering.gif"
+    link='engineering'
+    name='More Engineering Projects...'
+    %}
+{% include more_projects.html
+    image="timg_design.gif"
+    link='design'
+    name='More Design Projects...'
+    %}   
+    
+{% include more_projects.html
+    image="timg_programming.gif"
+    link='programming'
+    name='More Programming Projects...'
+    %}   
+
+{% include more_projects.html
+    image="timg_resume2.png"
+    link='resume'
+    name='Resume and Achievements'
+    %}   
+-->    
+
+
+            </div>
+            <!-- end portfolio_container -->
+        </div>
+        <!-- portfolio -->
+    </div>
+    <!-- end portfolio div -->
+
+    <!-- footer -->
+    <!--footer>
+        <div class="container-fluid">
+            <p class="copyright">© Box Portfolio 2016</p>
+        </div>
+    </footer-->
+    <!-- end footer -->
+
+    <!-- back to top -->
+    <a href="#0" class="cd-top"><i class="ion-android-arrow-up"></i></a>
+    <!-- end back to top -->
+
+
+
+    <!-- jQuery -->
+    <script src="js/jquery-2.1.1.js"></script>
+    <!--  plugins -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/animated-headline.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+
+
+    <!--  custom script -->
+    <script src="js/custom.js"></script>
+    {% include lazyload.html %}
+
+</body>
+
+</html>

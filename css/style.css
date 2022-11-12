@@ -27,7 +27,8 @@
 /* Google fonts & font family
 ==================================================*/
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Archivo');
+@import url('https://fonts.googleapis.com/css?family=Archivo+Black');
 
 /* General
 ==================================================*/
@@ -37,9 +38,9 @@
 html,
 body {
     height: 100%;
-    font-family: 'Roboto Mono', monospace;
-    line-height: 1.8;
-    color: #999
+    font-family: 'Archivo Black', san-serif;
+    line-height: 1.4;
+    color: #000
 }
 .padded-column{
   padding-left:25%;padding-right:25%;
@@ -106,8 +107,21 @@ a {
 /* typography
 ==================================================*/
 
+p {
+    font-family: 'Archivo', san-serif;
+    line-height: 1.2;
+    font-size: 20px;
+    color: #111f46;
+}
+b {
+    font-family: 'Archivo Black', san-serif;
+}
+
 h1 {
-    color: #393939;
+    background: -webkit-linear-gradient(45deg, #111f46, #233066);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* color: #393939; */
     font-size: 60px;
     text-transform: uppercase;
 }
